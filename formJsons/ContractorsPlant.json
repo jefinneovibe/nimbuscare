@@ -1,0 +1,2131 @@
+{
+    "_id" : ObjectId("5dfc6a72d16899732f6346c3"),
+    "name" : "Contractors Plant Mach Equip EQuestionnaire",
+    "worktypeId" : ObjectId("5cc3042e743b7749de5baa93"),
+    "stages" : {
+        "eQuestionnaire" : {
+            "name" : "E Questionnaire",
+            "steps" : {
+                "basicDetails" : {
+                    "name" : "Basic Details",
+                    "rows" : [
+                        {
+                            "config" : "",
+                            "fields" : [
+                                {
+                                    "widgetType" : "Text",
+                                    "sort" : 1,
+                                    "config" : {
+                                        "label" : "Please Enter The Full Name Of Your Enterprise / Individual",
+                                        "placeHolder" : "Please enter the full name of your Enterprise / Individual",
+                                        "fieldName" : "firstName",
+                                        "id" : "firstName",
+                                        "eSlipVisibility" : true,
+                                        "validation" : {
+                                            "required" : true
+                                        },
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "12"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "config" : "",
+                            "fields" : [
+                                {
+                                    "widgetType" : "Textarea",
+                                    "sort" : 2,
+                                    "config" : {
+                                        "label" : "Address Line 1",
+                                        "placeHolder" : "Address line 1",
+                                        "fieldName" : "address1",
+                                        "id" : "address1",
+                                        "validation" : {
+                                            "required" : true
+                                        },
+                                        "eSlipVisibility" : true,
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "6",
+                                            "rows" : "1"
+                                        }
+                                    }
+                                },
+                                {
+                                    "widgetType" : "Textarea",
+                                    "sort" : 3,
+                                    "config" : {
+                                        "label" : "Address Line 2",
+                                        "placeHolder" : "Address line 2",
+                                        "fieldName" : "address2",
+                                        "id" : "address2",
+                                        "eSlipVisibility" : true,
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "6",
+                                            "rows" : "1"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "config" : "",
+                            "fields" : [
+                                {
+                                    "widgetType" : "Country",
+                                    "sort" : 4,
+                                    "config" : {
+                                        "label" : "Country",
+                                        "placeHolder" : "Country",
+                                        "fieldName" : "country",
+                                        "id" : "country",
+                                        "eSlipVisibility" : false,
+                                        "relation" : {
+                                            "relatedTo" : "emirate"
+                                        },
+                                        "style" : {
+                                            "col_width" : "3"
+                                        }
+                                    }
+                                },
+                                {
+                                    "widgetType" : "Emirate",
+                                    "sort" : 5,
+                                    "config" : {
+                                        "label" : "Emirate",
+                                        "placeHolder" : "Emirate",
+                                        "fieldName" : "emirate",
+                                        "id" : "emirate",
+                                        "eSlipVisibility" : false,
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "3"
+                                        }
+                                    }
+                                },
+                                {
+                                    "widgetType" : "Text",
+                                    "sort" : 6,
+                                    "config" : {
+                                        "label" : "City",
+                                        "placeHolder" : "City",
+                                        "fieldName" : "city",
+                                        "id" : "city",
+                                        "validation" : {
+                                            "required" : true
+                                        },
+                                        "eSlipVisibility" : false,
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "3"
+                                        }
+                                    }
+                                },
+                                {
+                                    "widgetType" : "Text",
+                                    "sort" : 7,
+                                    "config" : {
+                                        "label" : "PO Box",
+                                        "placeHolder" : "PO Box",
+                                        "fieldName" : "pin",
+                                        "id" : "pin",
+                                        "validation" : {
+                                            "required" : true
+                                        },
+                                        "eSlipVisibility" : false,
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "3"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "validations" : [
+                        {
+                            "field" : "firstName",
+                            "validation" : {
+                                "required" : true,
+                                "maxlength" : 150
+                            },
+                            "messages" : {
+                                "required" : "Enter first name",
+                                "maxlength" : "Maximum length exceeded"
+                            }
+                        },
+                        {
+                            "field" : "address1",
+                            "validation" : {
+                                "required" : true
+                            },
+                            "messages" : {
+                                "required" : "Enter address 1"
+                            }
+                        },
+                        [],
+                        {
+                            "field" : "country",
+                            "validation" : {
+                                "required" : true
+                            },
+                            "messages" : {
+                                "required" : "Select country"
+                            }
+                        },
+                        {
+                            "field" : "emirate",
+                            "validation" : {
+                                "required" : true
+                            },
+                            "messages" : {
+                                "required" : "Select emirate"
+                            }
+                        },
+                        {
+                            "field" : "city",
+                            "validation" : {
+                                "required" : true
+                            },
+                            "messages" : {
+                                "required" : "Enter city"
+                            }
+                        },
+                        {
+                            "field" : "pin",
+                            "validation" : {
+                                "required" : true,
+                                "maxlength" : 6,
+                                "digits" : "true"
+                            },
+                            "messages" : {
+                                "required" : "Please Enter PO Box",
+                                "maxlength" : "maximum length exceeded",
+                                "digits" : "Only numbers are allowed."
+                            }
+                        }
+                    ]
+                },
+                "businessDetails" : {
+                    "name" : "Business Details",
+                    "rows" : [
+                        {
+                            "config" : "",
+                            "fields" : [
+                                {
+                                    "widgetType" : "BusinessInsured",
+                                    "sort" : 1,
+                                    "config" : {
+                                        "label" : "Business of the Insured ",
+                                        "placeHolder" : "Business of the Insured ",
+                                        "fieldName" : "businessType",
+                                        "id" : "businessType",
+                                        "eSlipVisibility" : false,
+                                        "validation" : {
+                                            "required" : true
+                                        },
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "12"
+                                        },
+                                        "options" : []
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "config" : {
+                                "class" : "top_space"
+                            },
+                            "fields" : [
+                                {
+                                    "widgetType" : "PlaceOfEmployment ",
+                                    "sort" : 2,
+                                    "config" : {
+                                        "label" : "Geographical Area",
+                                        "placeHolder" : "Geographical Area",
+                                        "fieldName" : "placeOfEmployment",
+                                        "id" : "placeOfEmployment",
+                                        "eSlipVisibility" : false,
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "12"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "config" : "",
+                            "fields" : [
+                                {
+                                    "widgetType" : "RadioButton",
+                                    "sort" : 1,
+                                    "config" : {
+                                        "label" : "Do you have drilling rigs ?",
+                                        "placeHolder" : "Do you have drilling rigs ?",
+                                        "fieldName" : "drillingRigs",
+                                        "id" : "drillingRigs",
+                                        "label_width" : "adjust",
+                                        "field_width" : "col-6",
+                                        "eSlipVisibility" : true,
+                                        "validation" : {
+                                            "required" : true
+                                        },
+                                        "options" : [
+                                            {
+                                                "option_id" : "drillingRigsYes",
+                                                "option_width" : 3,
+                                                "option_value" : "Yes"
+                                            },
+                                            {
+                                                "option_id" : "drillingRigsNo",
+                                                "option_width" : 3,
+                                                "option_value" : "No"
+                                            }
+                                        ],
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "3"
+                                        }
+                                    }
+                                },
+                                {
+                                    "widgetType" : "RadioWithChildren",
+                                    "sort" : 7,
+                                    "config" : {
+                                        "label" : "Is there is any subsidiary/affliated company?",
+                                        "placeHolder" : "affliated company",
+                                        "fieldName" : "affliatedCompany",
+                                        "label_width" : "col-4",
+                                        "field_width" : "col-6",
+                                        "id" : "affliatedCompany[hasaffliatedCompany]",
+                                        "valueKey" : "hasaffliatedCompany",
+                                        "idToShowChildren" : "hasaffliatedCompanyYes",
+                                        "options" : [
+                                            {
+                                                "option_id" : "hasaffliatedCompanyYes",
+                                                "option_width" : 1,
+                                                "option_value" : "Yes"
+                                            },
+                                            {
+                                                "option_id" : "hasaffliatedCompanyNo",
+                                                "option_width" : 1,
+                                                "option_value" : "No"
+                                            }
+                                        ],
+                                        "children" : [
+                                            {
+                                                "widgetType" : "CustomMultiplier",
+                                                "sort" : 7,
+                                                "config" : {
+                                                    "label" : "",
+                                                    "fieldName" : "affliatedCompany[details]",
+                                                    "id" : "affliatedCompanyDetails",
+                                                    "valueKey" : "details",
+                                                    "isMultiplier" : true,
+                                                    "children" : [
+                                                        {
+                                                            "widgetType" : "Text",
+                                                            "sort" : 7,
+                                                            "config" : {
+                                                                "label" : "Details",
+                                                                "placeHolder" : "details",
+                                                                "fieldName" : "affliatedCompany[details][name][]",
+                                                                "id" : "affliatedCompany_name",
+                                                                "valueKey" : "name",
+                                                                "field_width" : "col-12",
+                                                                "eQuotationVisibility" : true,
+                                                                "relation" : {
+                                                                    "relatedTo" : false
+                                                                },
+                                                                "style" : {
+                                                                    "col_width" : "4"
+                                                                }
+                                                            }
+                                                        }
+                                                    ],
+                                                    "style" : {
+                                                        "col_width" : "12"
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "9"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "config" : "",
+                            "fields" : [
+                                {
+                                    "widgetType" : "RadioWithChildren",
+                                    "sort" : 7,
+                                    "config" : {
+                                        "label" : "Is there any Machinery and equipment is being hired in / hired out?",
+                                        "placeHolder" : "Is there any Machinery and equipment is being hired in / hired out",
+                                        "fieldName" : "hiredMachinary",
+                                        "label_width" : "col-4",
+                                        "field_width" : "col-6",
+                                        "id" : "hiredMachinary[isAnyHiredMachinary]",
+                                        "valueKey" : "isAnyHiredMachinary",
+                                        "idToShowChildren" : "isAnyHiredMachinaryYes",
+                                        "options" : [
+                                            {
+                                                "option_id" : "isAnyHiredMachinaryYes",
+                                                "option_width" : 1,
+                                                "option_value" : "Yes"
+                                            },
+                                            {
+                                                "option_id" : "isAnyHiredMachinaryNo",
+                                                "option_width" : 1,
+                                                "option_value" : "No"
+                                            }
+                                        ],
+                                        "children" : [
+                                            {
+                                                "widgetType" : "Text",
+                                                "sort" : 7,
+                                                "config" : {
+                                                    "label" : "",
+                                                    "placeHolder" : "Give the details",
+                                                    "fieldName" : "hiredMachinary[details]",
+                                                    "id" : "hiredMachinary_details",
+                                                    "valueKey" : "details",
+                                                    "eSlipVisibility" : false,
+                                                    "relation" : {
+                                                        "relatedTo" : false
+                                                    },
+                                                    "style" : {
+                                                        "col_width" : "5"
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "validations" : [
+                                            {
+                                                "field" : "hiredMachinary_details",
+                                                "validation" : {
+                                                    "required" : true
+                                                },
+                                                "messages" : {
+                                                    "required" : "Please enter details"
+                                                }
+                                            }
+                                        ],
+                                        "eSlipVisibility" : false,
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "10"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "config" : "",
+                            "fields" : [
+                                {
+                                    "widgetType" : "Text",
+                                    "sort" : "2",
+                                    "config" : {
+                                        "label" : "Total sum Insured",
+                                        "placeHolder" : "Total sum Insured",
+                                        "fieldName" : "totalSumInsured",
+                                        "id" : "totalSumInsured",
+                                        "field_width" : "col-6",
+                                        "eQuotationVisibility" : true,
+                                        "validation" : {
+                                            "required" : true
+                                        },
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "6"
+                                        },
+                                        "aed" : true
+                                    }
+                                },
+                                {
+                                    "widgetType" : "Text",
+                                    "sort" : "2",
+                                    "config" : {
+                                        "label" : "Maxim Deductable (Acceptable)",
+                                        "placeHolder" : "Maxim Deductable (Acceptable)",
+                                        "fieldName" : "maximDeductableAcceptable",
+                                        "id" : "maximDeductableAcceptable",
+                                        "field_width" : "col-6",
+                                        "eQuotationVisibility" : true,
+                                        "validation" : {
+                                            "required" : true
+                                        },
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "6"
+                                        },
+                                        "aed" : true
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "config" : {},
+                            "fields" : [
+                                {
+                                    "widgetType" : "RadioWithChildren",
+                                    "sort" : 7,
+                                    "config" : {
+                                        "label" : "Do you need the policy to be assigned to a bank?",
+                                        "placeHolder" : "Do you need the policy to be assigned to a bank?",
+                                        "fieldName" : "policyAssignedToBank",
+                                        "id" : "policyAssignedToBank[isPolicyAssignedToBank]",
+                                        "valueKey" : "isPolicyAssignedToBank",
+                                        "label_width" : "col-12",
+                                        "field_width" : "col-12 child_space",
+                                        "idToShowChildren" : "policyAssignedToBankIsPolicyAssignedToBankYes",
+                                        "options" : [
+                                            {
+                                                "option_id" : "policyAssignedToBankIsPolicyAssignedToBankYes",
+                                                "option_width" : 1,
+                                                "option_value" : "Yes"
+                                            },
+                                            {
+                                                "option_id" : "policyAssignedToBankIsPolicyAssignedToBankNo",
+                                                "option_width" : 1,
+                                                "option_value" : "No"
+                                            }
+                                        ],
+                                        "eSlipVisibility" : false,
+                                        "children" : [
+                                            {
+                                                "widgetType" : "Text",
+                                                "sort" : 7,
+                                                "config" : {
+                                                    "label" : "Bank Name",
+                                                    "placeHolder" : "Bank Name",
+                                                    "fieldName" : "policyAssignedToBank[bankName]",
+                                                    "id" : "policyAssignedToBank_bankName",
+                                                    "valueKey" : "bankName",
+                                                    "eSlipVisibility" : false,
+                                                    "class" : [
+                                                        "required"
+                                                    ],
+                                                    "validation" : {
+                                                        "required" : true
+                                                    },
+                                                    "relation" : {
+                                                        "relatedTo" : false
+                                                    },
+                                                    "style" : {
+                                                        "col_width" : "3"
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "widgetType" : "Text",
+                                                "sort" : 7,
+                                                "config" : {
+                                                    "label" : "Telephone Number",
+                                                    "placeHolder" : "Telephone Number",
+                                                    "fieldName" : "policyAssignedToBank[telephoneNumber]",
+                                                    "id" : "policyAssignedToBank_telephoneNumber",
+                                                    "valueKey" : "telephoneNumber",
+                                                    "class" : [
+                                                        "numberOnly"
+                                                    ],
+                                                    "eSlipVisibility" : false,
+                                                    "relation" : {
+                                                        "relatedTo" : false
+                                                    },
+                                                    "style" : {
+                                                        "col_width" : "3"
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "widgetType" : "Text",
+                                                "sort" : 7,
+                                                "config" : {
+                                                    "label" : "Fax number",
+                                                    "placeHolder" : "Fax number",
+                                                    "fieldName" : "policyAssignedToBank[faxNumber]",
+                                                    "id" : "policyAssignedToBank_faxNumber",
+                                                    "valueKey" : "faxNumber",
+                                                    "class" : [
+                                                        "numberOnly"
+                                                    ],
+                                                    "validation" : {},
+                                                    "eSlipVisibility" : false,
+                                                    "relation" : {
+                                                        "relatedTo" : false
+                                                    },
+                                                    "style" : {
+                                                        "col_width" : "3"
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "widgetType" : "Text",
+                                                "sort" : 7,
+                                                "config" : {
+                                                    "label" : "PO Box",
+                                                    "placeHolder" : "PO Box",
+                                                    "fieldName" : "policyAssignedToBank[poBox]",
+                                                    "id" : "policyAssignedToBank_poBox",
+                                                    "class" : [
+                                                        "required"
+                                                    ],
+                                                    "validation" : {
+                                                        "required" : true
+                                                    },
+                                                    "valueKey" : "poBox",
+                                                    "eSlipVisibility" : false,
+                                                    "relation" : {
+                                                        "relatedTo" : false
+                                                    },
+                                                    "style" : {
+                                                        "col_width" : "3"
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "widgetType" : "Text",
+                                                "sort" : 7,
+                                                "config" : {
+                                                    "label" : "Location/Branch",
+                                                    "placeHolder" : "Location/Branch",
+                                                    "fieldName" : "policyAssignedToBank[location]",
+                                                    "id" : "policyAssignedToBank_location",
+                                                    "valueKey" : "location",
+                                                    "eSlipVisibility" : false,
+                                                    "class" : [
+                                                        "required"
+                                                    ],
+                                                    "validation" : {
+                                                        "required" : true
+                                                    },
+                                                    "relation" : {
+                                                        "relatedTo" : false
+                                                    },
+                                                    "style" : {
+                                                        "col_width" : "3"
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "widgetType" : "Text",
+                                                "sort" : 7,
+                                                "config" : {
+                                                    "label" : "Contact Person",
+                                                    "placeHolder" : "Contact Person",
+                                                    "fieldName" : "policyAssignedToBank[contactPerson]",
+                                                    "id" : "policyAssignedToBank_contactPerson",
+                                                    "valueKey" : "contactPerson",
+                                                    "eSlipVisibility" : false,
+                                                    "relation" : {
+                                                        "relatedTo" : false
+                                                    },
+                                                    "style" : {
+                                                        "col_width" : "3"
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "widgetType" : "Text",
+                                                "sort" : 7,
+                                                "config" : {
+                                                    "label" : "Related Department Inside the Bank",
+                                                    "placeHolder" : "Related Department Inside the Bank",
+                                                    "fieldName" : "policyAssignedToBank[relatedDepartment]",
+                                                    "id" : "policyAssignedToBank_relatedDepartment",
+                                                    "valueKey" : "relatedDepartment",
+                                                    "eSlipVisibility" : false,
+                                                    "relation" : {
+                                                        "relatedTo" : false
+                                                    },
+                                                    "style" : {
+                                                        "col_width" : "3"
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "widgetType" : "Text",
+                                                "sort" : 7,
+                                                "config" : {
+                                                    "label" : "Email address",
+                                                    "placeHolder" : "Email address",
+                                                    "fieldName" : "policyAssignedToBank[email]",
+                                                    "id" : "policyAssignedToBank_email",
+                                                    "class" : [
+                                                        "emailField"
+                                                    ],
+                                                    "valueKey" : "email",
+                                                    "eSlipVisibility" : false,
+                                                    "relation" : {
+                                                        "relatedTo" : false
+                                                    },
+                                                    "style" : {
+                                                        "col_width" : "3"
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "widgetType" : "Text",
+                                                "sort" : 7,
+                                                "config" : {
+                                                    "label" : "Mobile Number",
+                                                    "placeHolder" : "Mobile Number",
+                                                    "fieldName" : "policyAssignedToBank[mobile]",
+                                                    "id" : "policyAssignedToBank_mobile",
+                                                    "valueKey" : "mobile",
+                                                    "class" : [
+                                                        "numberOnly"
+                                                    ],
+                                                    "validation" : {},
+                                                    "eSlipVisibility" : false,
+                                                    "relation" : {
+                                                        "relatedTo" : false
+                                                    },
+                                                    "style" : {
+                                                        "col_width" : "3"
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "validations" : [
+                                            {
+                                                "field" : "policyAssignedToBank_bankName",
+                                                "validation" : {
+                                                    "required" : true
+                                                },
+                                                "messages" : {
+                                                    "required" : "Please enter bank name"
+                                                }
+                                            },
+                                            {
+                                                "field" : "policyAssignedToBank_email",
+                                                "validation" : {
+                                                    "email" : true
+                                                },
+                                                "messages" : {
+                                                    "required" : "Please enter email",
+                                                    "email" : "Invalid email"
+                                                }
+                                            },
+                                            {
+                                                "field" : "policyAssignedToBank_relatedDepartment",
+                                                "validation" : {
+                                                    "required" : true
+                                                },
+                                                "messages" : {
+                                                    "required" : "Please enter related department"
+                                                }
+                                            },
+                                            {
+                                                "field" : "policyAssignedToBank_contactPerson",
+                                                "validation" : {
+                                                    "required" : true
+                                                },
+                                                "messages" : {
+                                                    "required" : "Please enter contact person"
+                                                }
+                                            },
+                                            {
+                                                "field" : "policyAssignedToBank_location",
+                                                "validation" : {
+                                                    "required" : true
+                                                },
+                                                "messages" : {
+                                                    "required" : "Please enter bank location"
+                                                }
+                                            },
+                                            {
+                                                "field" : "policyAssignedToBank_telephoneNumber",
+                                                "validation" : {
+                                                    "required" : true,
+                                                    "maxlength" : 10,
+                                                    "digits" : true
+                                                },
+                                                "messages" : {
+                                                    "required" : "Please enter telephone number",
+                                                    "maxlength" : "Maximum length exceeded",
+                                                    "digits" : "Only numbers allowed"
+                                                }
+                                            },
+                                            {
+                                                "field" : "policyAssignedToBank_poBox",
+                                                "validation" : {
+                                                    "required" : true,
+                                                    "maxlength" : 15
+                                                },
+                                                "messages" : {
+                                                    "required" : "Please enter PO box number",
+                                                    "maxlength" : "Maximum length exceeded"
+                                                }
+                                            },
+                                            {
+                                                "field" : "policyAssignedToBank_faxNumber",
+                                                "validation" : {
+                                                    "required" : true,
+                                                    "maxlength" : 10,
+                                                    "digits" : true
+                                                },
+                                                "messages" : {
+                                                    "required" : "Please enter fax number",
+                                                    "maxlength" : "Maximum length exceeded",
+                                                    "digits" : "Only numbers allowed"
+                                                }
+                                            },
+                                            {
+                                                "field" : "policyAssignedToBank_mobile",
+                                                "validation" : {
+                                                    "required" : true,
+                                                    "maxlength" : 11,
+                                                    "digits" : true
+                                                },
+                                                "messages" : {
+                                                    "required" : "Please enter fax number",
+                                                    "maxlength" : "Maximum length exceeded",
+                                                    "digits" : "Only numbers allowed"
+                                                }
+                                            }
+                                        ],
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "12"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "validations" : [
+                        {
+                            "field" : "businessType",
+                            "validation" : {
+                                "required" : true
+                            },
+                            "messages" : {
+                                "required" : "Select business of the insured"
+                            }
+                        },
+                        {
+                            "field" : "totalSumInsured",
+                            "validation" : {
+                                "required" : true,
+                                "amount" : true
+                            },
+                            "messages" : {
+                                "required" : "Enter total sum of insured",
+                                "amount" : "Enter number only"
+                            }
+                        },
+                        {
+                            "field" : "maximDeductableAcceptable",
+                            "validation" : {
+                                "required" : true,
+                                "amount" : true
+                            },
+                            "messages" : {
+                                "required" : "Enter maxim deductable (acceptable)",
+                                "amount" : "Enter number only"
+                            }
+                        },
+                        {
+                            "field" : "affliatedCompany[hasaffliatedCompany]",
+                            "validation" : {
+                                "required" : true
+                            },
+                            "messages" : {
+                                "required" : "Select affliated company"
+                            }
+                        },
+                        {
+                            "field" : "policyAssignedToBank[isPolicyAssignedToBank]",
+                            "validation" : {
+                                "required" : true
+                            },
+                            "messages" : {
+                                "required" : "Please choose one"
+                            }
+                        },
+                        {
+                            "field" : "hiredMachinary[isAnyHiredMachinary]",
+                            "validation" : {
+                                "required" : true
+                            },
+                            "messages" : {
+                                "required" : "Please choose one"
+                            }
+                        }
+                    ]
+                },
+                "policyDetails" : {
+                    "name" : "Previous Policy Details",
+                    "rows" : [
+                        {
+                            "config" : "",
+                            "fields" : [
+                                {
+                                    "widgetType" : "PolicyPeriod",
+                                    "sort" : 2,
+                                    "config" : {
+                                        "label" : "Policy Period",
+                                        "placeHolder" : "Select policy period",
+                                        "fieldName" : "policyPeriod",
+                                        "id" : "policyPeriod",
+                                        "eSlipVisibility" : true,
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "12"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "config" : "",
+                            "fields" : [
+                                {
+                                    "widgetType" : "ClaimHistoryWithColumns",
+                                    "sort" : 2,
+                                    "config" : {
+                                        "type" : false,
+                                        "label" : "Claims History",
+                                        "placeHolder" : "Select claims history",
+                                        "fieldName" : "claimsHistory",
+                                        "id" : "claimsHistory",
+                                        "field_class" : "col-6",
+                                        "eSlipVisibility" : true,
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "12"
+                                        },
+                                        "columns" : [
+                                            {
+                                                "label" : "Amount",
+                                                "fieldname" : "amount",
+                                                "aed" : true,
+                                                "columnWidth" : "30%"
+                                            },
+                                            {
+                                                "label" : "Description of Loss",
+                                                "fieldname" : "descriptionofloss",
+                                                "columnWidth" : "70%"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "validations" : [
+                        {
+                            "field" : "claimsHistory",
+                            "validation" : {
+                                "required" : true
+                            },
+                            "messages" : {
+                                "required" : "Select claims history"
+                            }
+                        }
+                    ]
+                },
+                "documents" : {
+                    "name" : "Documents",
+                    "rows" : [
+                        {
+                            "config" : "",
+                            "fields" : [
+                                {
+                                    "widgetType" : "pdfUpload",
+                                    "sort" : 1,
+                                    "config" : {
+                                        "label" : "Tax Registration Document",
+                                        "placeHolder" : "Drag your files or click here",
+                                        "fieldName" : "taxRegistrationDocument",
+                                        "id" : "taxRegistrationDocument",
+                                        "eSlipVisibility" : false,
+                                        "validation" : [],
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "3"
+                                        }
+                                    }
+                                },
+                                {
+                                    "widgetType" : "pdfUpload",
+                                    "sort" : 2,
+                                    "config" : {
+                                        "label" : "Trade license",
+                                        "placeHolder" : "Drag your files or click here",
+                                        "fieldName" : "tradeLiscense",
+                                        "id" : "tradeLiscense",
+                                        "eSlipVisibility" : false,
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "3"
+                                        }
+                                    }
+                                },
+                                {
+                                    "widgetType" : "pdfUpload",
+                                    "sort" : 4,
+                                    "config" : {
+                                        "label" : "Copy of policy",
+                                        "placeHolder" : "Drag your files or click here",
+                                        "fieldName" : "copyOfPolicyPdf",
+                                        "id" : "copyOfPolicyPdf",
+                                        "notRequired" : true,
+                                        "eSlipVisibility" : false,
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "3"
+                                        }
+                                    }
+                                },
+                                {
+                                    "widgetType" : "pdfUpload",
+                                    "sort" : 1,
+                                    "config" : {
+                                        "label" : "List of Equipment/Machinary",
+                                        "placeHolder" : "Drag your files or click here",
+                                        "fieldName" : "equipmentDetails",
+                                        "id" : "equipmentDetails",
+                                        "hasTemplate" : true,
+                                        "templateUrl" : "https://iib-live.s3.ap-south-1.amazonaws.com/ContractorsPlantandMachinery.xls",
+                                        "eSlipVisibility" : false,
+                                        "validation" : [],
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "3"
+                                        }
+                                    }
+                                },
+                                {
+                                    "widgetType" : "CustomExcelUpload",
+                                    "sort" : 5,
+                                    "config" : {
+                                        "label" : "Upload excel",
+                                        "placeHolder" : "Drag your files or click here",
+                                        "fieldName" : "customExcelUpload",
+                                        "id" : "customExcelUpload",
+                                        "columns" : [],
+                                        "eSlipVisibility" : true
+                                    }
+                                },
+                                {
+                                    "widgetType" : "multipleUpload",
+                                    "sort" : 5,
+                                    "config" : {
+                                        "label" : "Upload your file",
+                                        "placeHolder" : "Drag your files or click here",
+                                        "fieldName" : "uploadYourFile",
+                                        "id" : "uploadYourFile",
+                                        "eSlipVisibility" : true
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "validations" : [
+                        {
+                            "field" : "taxRegistrationDocument",
+                            "validation" : {
+                                "required" : true,
+                                "extension" : "xls|csv|pdf|doc|txt|png|jpg|jpeg|xlss|docx|xlsx",
+                                "fileSize" : "2097152"
+                            },
+                            "messages" : {
+                                "required" : "Select tax registration document",
+                                "extension" : "please upload valid document",
+                                "fileSize" : "Please upload a file less than 2MB"
+                            }
+                        },
+                        {
+                            "field" : "tradeLiscense",
+                            "validation" : {
+                                "required" : true,
+                                "extension" : "xls|csv|pdf|doc|txt|png|jpg|jpeg|xlss|docx|xlsx",
+                                "fileSize" : "2097152"
+                            },
+                            "messages" : {
+                                "required" : "Select trade liscense",
+                                "extension" : "please upload valid document",
+                                "fileSize" : "Please upload a file less than 2MB"
+                            }
+                        },
+                        {
+                            "field" : "equipmentDetails",
+                            "validation" : {
+                                "required" : true,
+                                "extension" : "xls|xlsx",
+                                "fileSize" : "2097152"
+                            },
+                            "messages" : {
+                                "required" : "Select equipment details",
+                                "extension" : "Please upload excel",
+                                "fileSize" : "Please upload a file less than 2MB"
+                            }
+                        },
+                        {
+                            "field" : "copyOfPolicyPdf",
+                            "validation" : {
+                                "extension" : "xls|csv|pdf|doc|txt|png|jpg|jpeg|xlss|docx|xlsx",
+                                "fileSize" : "2097152"
+                            },
+                            "messages" : {
+                                "extension" : "please upload valid document",
+                                "fileSize" : "Please upload a file less than 2MB"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "eSlip" : {
+            "name" : "E Slip",
+            "steps" : {
+                "forms" : {
+                    "name" : "form",
+                    "rows" : [
+                        {
+                            "config" : "",
+                            "fields" : [
+                                {
+                                    "widgetType" : "checkbox",
+                                    "sort" : 1,
+                                    "config" : {
+                                        "label" : "Cover for underground Machinery and equipment",
+                                        "placeHolder" : "Cover for underground Machinery and equipment",
+                                        "fieldName" : "coverUnderground",
+                                        "id" : "coverUnderground",
+                                        "hasTextbox" : false,
+                                        "isChecked" : false,
+                                        "eQuotationVisibility" : true,
+                                        "style" : {
+                                            "col_width" : "12"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "config" : "",
+                            "fields" : [
+                                {
+                                    "widgetType" : "checkbox",
+                                    "sort" : 1,
+                                    "config" : {
+                                        "label" : "Automatic addition",
+                                        "placeHolder" : "Automatic addition",
+                                        "fieldName" : "AutomaticAddition",
+                                        "id" : "AutomaticAddition",
+                                        "hasTextbox" : false,
+                                        "isChecked" : false,
+                                        "eQuotationVisibility" : true,
+                                        "style" : {
+                                            "col_width" : "12"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "config" : "",
+                            "fields" : [
+                                {
+                                    "widgetType" : "RadioButton",
+                                    "sort" : 1,
+                                    "config" : {
+                                        "label" : "Jurisdiction",
+                                        "placeHolder" : "Jurisdiction",
+                                        "fieldName" : "jurisdiction",
+                                        "id" : "jurisdiction",
+                                        "label_width" : "adjust",
+                                        "field_width" : "col-6",
+                                        "eQuotationVisibility" : true,
+                                        "options" : [
+                                            {
+                                                "option_id" : "Within UAE",
+                                                "option_width" : 4,
+                                                "default" : true,
+                                                "option_value" : "Within UAE"
+                                            },
+                                            {
+                                                "option_id" : "Outside UAE",
+                                                "option_width" : 4,
+                                                "option_value" : "Outside UAE"
+                                            }
+                                        ],
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "12"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "config" : "",
+                            "fields" : [
+                                {
+                                    "widgetType" : "checkbox",
+                                    "sort" : 1,
+                                    "config" : {
+                                        "label" : "Transit and Road risks whilst the insured items are moving by own  power on public roads",
+                                        "placeHolder" : "transitRoadRisks",
+                                        "fieldName" : "transitRoadRisks",
+                                        "id" : "transitRoadRisks",
+                                        "hasTextbox" : false,
+                                        "isChecked" : false,
+                                        "eQuotationVisibility" : true,
+                                        "style" : {
+                                            "col_width" : "12"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "config" : "",
+                            "fields" : [
+                                {
+                                    "widgetType" : "checkbox",
+                                    "sort" : 1,
+                                    "config" : {
+                                        "label" : "Salvage: In case of total loss Insurer will give the option to the Insured to purchase the salvage based on the amount of the highest bid obtained by the Insurer",
+                                        "placeHolder" : "salvageCase",
+                                        "fieldName" : "salvageCase",
+                                        "id" : "salvageCase",
+                                        "hasTextbox" : false,
+                                        "isChecked" : false,
+                                        "eQuotationVisibility" : true,
+                                        "style" : {
+                                            "col_width" : "12"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "config" : "",
+                            "fields" : [
+                                {
+                                    "widgetType" : "checkbox",
+                                    "sort" : 1,
+                                    "config" : {
+                                        "label" : "Basis of settlement :Total loss claims will be settled on the current market value of the vehicle on the day of accident and insured should submit 3 valuation report for consideration of loss surveyor",
+                                        "placeHolder" : "declarationSumInsured",
+                                        "fieldName" : "declarationSumInsured",
+                                        "id" : "declarationSumInsured",
+                                        "hasTextbox" : false,
+                                        "isChecked" : false,
+                                        "eQuotationVisibility" : true,
+                                        "style" : {
+                                            "col_width" : "12"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "config" : "",
+                            "fields" : [
+                                {
+                                    "widgetType" : "Text",
+                                    "sort" : "2",
+                                    "config" : {
+                                        "label" : "Authorised repair limit",
+                                        "placeHolder" : "Authorised repair limit",
+                                        "fieldName" : "authorisedRepairLimit",
+                                        "id" : "authorisedRepairLimit",
+                                        "eQuotationVisibility" : true,
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "12"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "config" : "",
+                            "fields" : [
+                                {
+                                    "widgetType" : "Text",
+                                    "sort" : 6,
+                                    "config" : {
+                                        "label" : "Agency repair",
+                                        "placeHolder" : "Agency repair",
+                                        "fieldName" : "repairAgency",
+                                        "id" : "repairAgency",
+                                        "eQuotationVisibility" : true,
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "12"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "config" : "",
+                            "fields" : [
+                                {
+                                    "widgetType" : "Text",
+                                    "sort" : 6,
+                                    "config" : {
+                                        "label" : "Profit Sharing",
+                                        "placeHolder" : "Profit Sharing",
+                                        "fieldName" : "sharingProfit",
+                                        "id" : "sharingProfit",
+                                        "eQuotationVisibility" : true,
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "12"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "config" : "",
+                            "fields" : [
+                                {
+                                    "widgetType" : "Text",
+                                    "sort" : 6,
+                                    "config" : {
+                                        "label" : "Claims procedure: Existing claim procedure attached and should form part of the policy",
+                                        "placeHolder" : "Claims procedure: Existing claim procedure attached and should form part of the policy",
+                                        "fieldName" : "existingClaimsProcedure",
+                                        "id" : "existingClaimsProcedure",
+                                        "eQuotationVisibility" : true,
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "12"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "config" : "",
+                            "fields" : [
+                                {
+                                    "widgetType" : "pdfUpload",
+                                    "sort" : 1,
+                                    "config" : {
+                                        "label" : "Claims document",
+                                        "placeHolder" : "Drag your files or click here",
+                                        "fieldName" : "claimsDocument",
+                                        "id" : "claimsDocument",
+                                        "eSlipVisibility" : false,
+                                        "notRequired" : true,
+                                        "validation" : [],
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "12"
+                                        }
+                                    }
+                                }
+                            ]
+                        },                       
+                        {
+                            "config" : "",
+                            "fields" : [
+                                {
+                                    "widgetType" : "Text",
+                                    "sort" : 6,
+                                    "config" : {
+                                        "label" : "Rate",
+                                        "placeHolder" : "Enter rate",
+                                        "fieldName" : "requiredRate",
+                                        "id" : "requiredRate",
+                                        "eQuoteTextbox" : true,
+                                        "preCustomerLabel" : "Target Rate",
+                                        "eQuoteTextboxValue" : true,
+                                        "eQuotationVisibility" : true,
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "12"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "config" : {
+                                "class" : "d-none"
+                            },
+                            "fields" : [
+                                {
+                                    "widgetType" : "Text",
+                                    "sort" : 6,
+                                    "config" : {
+                                        "label" : "Premium",
+                                        "preCustomerLabel" : "Target Premium",
+                                        "placeHolder" : "Premium Required",
+                                        "fieldName" : "requiredPremiumRate",
+                                        "id" : "requiredPremiumRate",
+                                        "eQuoteTextbox" : true,
+                                        "eQuoteTextboxValue" : true,
+                                        "eQuotationVisibility" : true,
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "12"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "config" : "",
+                            "fields" : [
+                                {
+                                    "widgetType" : "Text",
+                                    "sort" : 6,
+                                    "config" : {
+                                        "label" : "Premium Payment Terms",
+                                        "placeHolder" : "Premium Payment Terms",
+                                        "fieldName" : "paymentTerms",
+                                        "id" : "paymentTerms",
+                                        "isCustomerResponse" : true,
+                                        "eQuoteTextbox" : true,
+                                        "eQuotationVisibility" : true,
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "12"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "config" : "",
+                            "fields" : [
+                                {
+                                    "widgetType" : "Text",
+                                    "sort" : 7,
+                                    "config" : {
+                                        "label" : "Brokerage (in %)",
+                                        "placeHolder" : "Enter here",
+                                        "fieldName" : "brokerage",
+                                        "id" : "brokerage",
+                                        "eQuotationVisibility" : true,
+                                        "eQuoteTextbox" : true,
+                                        "iClass" : "numberOnly rangeValidation",
+                                        "dataAttributes" : "data-min=20 data-max=100",
+                                        "eQuoteTextboxValue" : true,
+                                        "validation" : {
+                                            "required" : false
+                                        },
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "12"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "config" : {},
+                            "fields" : [
+                                {
+                                    "widgetType" : "Textarea",
+                                    "sort" : 9,
+                                    "config" : {
+                                        "label" : "Comments (if any)",
+                                        "placeHolder" : "Enter comments",
+                                        "fieldName" : "comments",
+                                        "id" : "comments",
+                                        "eQuotationVisibility" : true,
+                                        "eQuoteTextbox" : false,
+                                        "isCustomerResponse" : true,
+                                        "eQuoteTextArea" : true,
+                                        "validation" : {
+                                            "required" : false
+                                        },
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "12"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "config" : "",
+                            "fields" : [
+                                {
+                                    "widgetType" : "Text",
+                                    "sort" : 7,
+                                    "config" : {
+                                        "label" : "Last date for submitting the quotation",
+                                        "placeHolder" : "click to select a date",
+                                        "fieldName" : "lastDate",
+                                        "id" : "lastDate",
+                                        "class" : [
+                                            "add_datepicker"
+                                        ],
+                                        "datepicker" : true,
+                                        "eQuotationVisibility" : false,
+                                        "eQuoteTextbox" : true,
+                                        "eQuoteTextboxValue" : true,
+                                        "eQuoteTextboxHidden" : true,
+                                        "validation" : {
+                                            "required" : true
+                                        },
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "12"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "config" : {
+                                "class" : "d-none"
+                            },
+                            "fields" : [
+                                {
+                                    "widgetType" : "Text",
+                                    "sort" : 8,
+                                    "config" : {
+                                        "label" : "Warranty ",
+                                        "placeHolder" : "Enter here",
+                                        "fieldName" : "warranty",
+                                        "id" : "warranty",
+                                        "eQuotationVisibility" : true,
+                                        "eQuoteTextbox" : false,
+                                        "eQuoteTextArea" : true,
+                                        "validation" : {
+                                            "required" : false
+                                        },
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "12"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "config" : {
+                                "class" : "d-none"
+                            },
+                            "fields" : [
+                                {
+                                    "widgetType" : "Text",
+                                    "sort" : 9,
+                                    "config" : {
+                                        "label" : "Exclusion",
+                                        "placeHolder" : "Enter here",
+                                        "fieldName" : "exclusion",
+                                        "id" : "exclusion",
+                                        "eQuotationVisibility" : true,
+                                        "eQuoteTextbox" : false,
+                                        "eQuoteTextArea" : true,
+                                        "validation" : {
+                                            "required" : false
+                                        },
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "12"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "config" : {
+                                "class" : "d-none"
+                            },
+                            "fields" : [
+                                {
+                                    "widgetType" : "Text",
+                                    "sort" : 9,
+                                    "config" : {
+                                        "label" : "Special Condition",
+                                        "placeHolder" : "Enter here",
+                                        "fieldName" : "specialCondition",
+                                        "id" : "specialCondition",
+                                        "eQuotationVisibility" : true,
+                                        "eQuoteTextbox" : false,
+                                        "eQuoteTextArea" : true,
+                                        "validation" : {
+                                            "required" : false
+                                        },
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "12"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "validations" : [
+                        {
+                            "field" : "authorisedRepairLimit",
+                            "validation" : {},
+                            "messages" : {
+                                "required" : "Select authorised Repair Limit"
+                            }
+                        },
+                        {
+                            "field" : "lastDate",
+                            "validation" : {
+                                "required" : true
+                            },
+                            "messages" : {
+                                "required" : "select a date"
+                            }
+                        },
+                        {
+                            "field" : "brokerage",
+                            "validation" : {
+                                "range" : "[20,100]"
+                            },
+                            "messages" : {
+                                "required" : "Enter brokerage.",
+                                "range" : "Please enter value in between 20 and 100."
+                            }
+                        },
+                        {
+                            "field" : "comments",
+                            "validation" : {
+                                "maxlength" : "200"
+                            },
+                            "messages" : {
+                                "maxlength" : "Maximum number of characters exceeds."
+                            }
+                        },
+                        {
+                            "field" : "repairAgency",
+                            "validation" : {},
+                            "messages" : {
+                                "required" : "Enter repair Agency"
+                            }
+                        },
+                        {
+                            "field" : "sharingProfit",
+                            "validation" : {},
+                            "messages" : {
+                                "required" : "Enter sharing profit"
+                            }
+                        },
+                        {
+                            "field" : "requiredRate",
+                            "validation" : {
+                                "number" : true
+                            },
+                            "messages" : {
+                                "required" : "Enter required Rate",
+                                "number" : "please enter valid number"
+                            }
+                        },
+                        {
+                            "field" : "requiredPremiumRate",
+                            "validation" : {
+                                "number" : true
+                            },
+                            "messages" : {
+                                "required" : "Enter required Premium Rate",
+                                "number" : "please enter valid number"
+                            }
+                        },
+                        {
+                            "field" : "paymentTerms",
+                            "validation" : {},
+                            "messages" : {
+                                "required" : "Enter payment Terms"
+                            }
+                        },
+                        {
+                            "field" : "claimsDocument",
+                            "validation" : {                                
+                                "extension" : "xls|csv|pdf|doc|txt|png|jpg|jpeg|xlss|docx|xlsx",
+                                "fileSize" : "2097152"
+                            },
+                            "messages" : {                                
+                                "extension" : "please upload valid document",
+                                "fileSize" : "Please upload a file less than 2MB"
+                            }
+                        },
+                        {
+                            "field" : "warranty",
+                            "validation" : {
+                                "required" : false
+                            },
+                            "messages" : {
+                                "required" : "Select warranty"
+                            }
+                        },
+                        {
+                            "field" : "exclusion",
+                            "validation" : {
+                                "required" : false
+                            },
+                            "messages" : {
+                                "required" : "Enter exclusion"
+                            }
+                        },
+                        {
+                            "field" : "specialCondition",
+                            "validation" : {
+                                "required" : false
+                            },
+                            "messages" : {
+                                "required" : "Enter special condition"
+                            }
+                        }
+                    ]
+                },
+                "review" : {
+                    "name" : "Review Fields",
+                    "fields" : [
+                        {
+                            "type" : "checkbox",
+                            "fieldName" : "lossPayeeClause",
+                            "label" : "Loss of payee clause",
+                            "eQuotationVisibility" : true,
+                            "isWidgetRelated" : true,
+                            "isChecked" : true,
+                            "relatedWidget" : "policyAssignedToBank",
+                            "checkValue" : "{$formValues['eQuestionnaire']['businessDetails']['policyAssignedToBank']['isPolicyAssignedToBank']}",
+                            "matchValue" : [
+                                "yes",
+                                "Yes",
+                                "policyAssignedToBankIsPolicyAssignedToBankYes"
+                            ]
+                        },
+                        {
+                            "type" : "text",
+                            "fieldName" : "insured",
+                            "label" : "Insured",
+                            "value" : "{$formValues['eQuestionnaire']['basicDetails']['firstName']}",
+                            "eQuotationVisibility" : true,
+                            "pdfView" : true,
+                            "statement" : ""
+                        },
+                        {
+                            "type" : "text",
+                            "fieldName" : "businessActivity",
+                            "label" : "Business Activity",
+                            "value" : "{$formValues['eQuestionnaire']['businessDetails']['businessType']['optionVal']}",
+                            "pdfView" : true,
+                            "eQuotationVisibility" : true
+                        },
+                        {
+                            "type" : "text",
+                            "fieldName" : "geographicalArea",
+                            "label" : "Geographical Area",
+                            "value" : "{$formValues['eQuestionnaire']['businessDetails']['placeOfEmployment']['withinUAE']} {$formValues['eQuestionnaire']['businessDetails']['placeOfEmployment']['countryName']}",
+                            "eQuotationVisibility" : true
+                        },
+                        {
+                            "type" : "text",
+                            "fieldName" : "policyPeriod",
+                            "label" : "Policy Period",
+                            "value" : "{$formValues['eQuestionnaire']['policyDetails']['policyPeriod']['policyFrom']} -  {$formValues['eQuestionnaire']['policyDetails']['policyPeriod']['policyTo'] }",
+                            "eQuotationVisibility" : true
+                        },
+                        {
+                            "type" : "checkbox",
+                            "fieldName" : "maliciousDamage",
+                            "label" : "Strike, riot and civil commotion and malicious damage",
+                            "isChecked" : true,
+                            "eQuotationVisibility" : true
+                        },
+                        {
+                            "type" : "checkbox",
+                            "fieldName" : "expressFreight",
+                            "label" : "Overtime, night works , works on public holidays and express freight",
+                            "isChecked" : true,
+                            "eQuotationVisibility" : true
+                        },
+                        {
+                            "type" : "checkbox",
+                            "fieldName" : "AirfreightCharges",
+                            "label" : "Cover for extra charges for Airfreight",
+                            "isChecked" : true,
+                            "eQuotationVisibility" : true
+                        },
+                        {
+                            "type" : "checkbox",
+                            "fieldName" : "coverItems",
+                            "label" : "Cover When Items are hired in / out",
+                            "isChecked" : true,
+                            "eQuotationVisibility" : true
+                        },
+                        {
+                            "type" : "checkbox",
+                            "fieldName" : "claimsPreperationClause",
+                            "label" : "Claims Preperation Clause",
+                            "isChecked" : true,
+                            "eQuotationVisibility" : true
+                        },
+                        {
+                            "type" : "checkbox",
+                            "fieldName" : "capitalAdditionClause",
+                            "label" : "Capital Addition Clause",
+                            "isChecked" : true,
+                            "eQuotationVisibility" : true
+                        },
+                        {
+                            "type" : "checkbox",
+                            "fieldName" : "fireFightingExpense",
+                            "label" : "Fire Fighting Expense",
+                            "isChecked" : true,
+                            "eQuotationVisibility" : true
+                        },
+                        {
+                            "type" : "checkbox",
+                            "fieldName" : "professionalclauseExpense",
+                            "label" : "Professional clause Expense",
+                            "isChecked" : true,
+                            "eQuotationVisibility" : true
+                        },
+                        {
+                            "type" : "checkbox",
+                            "fieldName" : "coverforTesting",
+                            "label" : "Cover for testing machinary & Installation",
+                            "isChecked" : true,
+                            "eQuotationVisibility" : true
+                        },
+                        {
+                            "type" : "checkbox",
+                            "fieldName" : "claimNotificationClause",
+                            "label" : "Claim notification clause",
+                            "isChecked" : true,
+                            "eQuotationVisibility" : true
+                        },
+                        {
+                            "type" : "checkbox",
+                            "fieldName" : "innocentDisclosure",
+                            "label" : "Innocent Disclosure",
+                            "isChecked" : true,
+                            "eQuotationVisibility" : true
+                        },
+                        {
+                            "type" : "checkbox",
+                            "fieldName" : "unloadingCover",
+                            "label" : "Inland Transit including loading and unloading cover",
+                            "isChecked" : true,
+                            "eQuotationVisibility" : true
+                        },
+                        {
+                            "type" : "checkbox",
+                            "fieldName" : "includedRisk",
+                            "label" : "Including the risk of erection, resettling and dismantling",
+                            "isChecked" : true,
+                            "eQuotationVisibility" : true
+                        },
+                        {
+                            "type" : "checkbox",
+                            "fieldName" : "tradeTool",
+                            "label" : "Tool of trade extension",
+                            "isChecked" : true,
+                            "eQuotationVisibility" : true
+                        },
+                        {
+                            "type" : "checkbox",
+                            "isWidgetRelated" : true,
+                            "relatedWidget" : "hiredMachinary",
+                            "checkValue" : "{$formValues['eQuestionnaire']['businessDetails']['hiredMachinary']['isAnyHiredMachinary']}",
+                            "matchValue" : [
+                                "Yes"
+                            ],
+                            "isChecked" : true,
+                            "label" : "Cover when items are hired out",
+                            "eQuotationVisibility" : true,
+                            "fieldName" : "hiredOutCover"
+                        },
+                        {
+                            "type" : "checkbox",
+                            "isWidgetRelated" : true,
+                            "relatedWidget" : "drillingRigs",
+                            "checkValue" : "{$formValues['eQuestionnaire']['businessDetails']['drillingRigs']}",
+                            "matchValue" : [
+                                "drillingRigsYes"
+                            ],
+                            "isChecked" : true,
+                            "label" : "Cover for water well drilling rigs and equipment",
+                            "eQuotationVisibility" : true,
+                            "fieldName" : "drillingRigsVal"
+                        },
+                        {
+                            "type" : "checkbox",
+                            "fieldName" : "automaticReinstatement",
+                            "label" : "Automatic Reinstatement of sum insured at prorata additional premium",
+                            "isChecked" : true,
+                            "eQuotationVisibility" : true
+                        },
+                        {
+                            "type" : "checkbox",
+                            "fieldName" : "eslip_specialCondition",
+                            "label" : "Special condition :It is understood and agreed that exclusion 'C' will not apply to accidental losses'.",
+                            "isChecked" : true,
+                            "eQuotationVisibility" : true
+                        },
+                        {
+                            "type" : "checkbox",
+                            "fieldName" : "thirdPartyLiability",
+                            "label" : "Third Party Liability- whilst on site, owned and/or hired parking yard, during participation in any sales promotions, sports, social events, display at various sites within GCC either contract of hire or otherwise",
+                            "isChecked" : true,
+                            "eQuotationVisibility" : true
+                        },
+                        {
+                            "type" : "checkbox",
+                            "fieldName" : "waiverSubrogation",
+                            "label" : "Waiver of subrogation against principal",
+                            "isWidgetRelated" : true,
+                            "relatedWidget" : "affliatedCompanyEslip",
+                            "checkValue" : "{$formValues['eQuestionnaire']['businessDetails']['affliatedCompany']['hasaffliatedCompany']}",
+                            "matchValue" : [
+                                "Yes",
+                                "hasaffliatedCompanyYes"
+                            ],
+                            "isChecked" : true,
+                            "eQuotationVisibility" : true
+                        },
+                        {
+                            "type" : "checkbox",
+                            "isBusinessRelated" : true,
+                            "relatedBusiness" : [
+                                16
+                            ],
+                            "isWidgetRelated" : false,
+                            "isChecked" : true,
+                            "valuesRequired" : false,
+                            "label" : "Indemnity to principal",
+                            "eQuotationVisibility" : true,
+                            "fieldName" : "indemnityPrincipal"
+                        },
+                        {
+                            "type" : "checkbox",
+                            "fieldName" : "totalLoss",
+                            "label" : "Total Loss:An equipment will be considered as total loss (destroyed) in case the repair cost is 50% or more than the NRV of the equipment (considered as constructive total loss)",
+                            "isChecked" : true,
+                            "eQuotationVisibility" : true
+                        },
+                        {
+                            "type" : "checkbox",
+                            "fieldName" : "averageCondition",
+                            "label" : "85% condition of average",
+                            "isChecked" : true,
+                            "eQuotationVisibility" : true
+                        },
+                        {
+                            "type" : "checkbox",
+                            "fieldName" : "cancellationClause",
+                            "label" : "Cancellation clause",
+                            "isChecked" : true,
+                            "eQuotationVisibility" : true
+                        },
+                        {
+                            "type" : "checkbox",
+                            "fieldName" : "removalDebris",
+                            "label" : "Removal of debris",
+                            "isChecked" : true,
+                            "eQuotationVisibility" : true
+                        },
+                        {
+                            "type" : "checkbox",
+                            "fieldName" : "repairInvestigation",
+                            "label" : "Repair investigation clause",
+                            "isChecked" : true,
+                            "eQuotationVisibility" : true
+                        },
+                        {
+                            "type" : "checkbox",
+                            "fieldName" : "temporaryRepairClause",
+                            "label" : "Temporary repair clause",
+                            "isChecked" : true,
+                            "eQuotationVisibility" : true
+                        },
+                        {
+                            "type" : "checkbox",
+                            "fieldName" : "errorsAndOmission",
+                            "label" : "Errors & omission clause",
+                            "isChecked" : true,
+                            "eQuotationVisibility" : true
+                        },
+                        {
+                            "type" : "checkbox",
+                            "fieldName" : "minimizationOfLoss",
+                            "label" : "Minimization of loss",
+                            "isChecked" : true,
+                            "eQuotationVisibility" : true
+                        },
+                        {
+                            "type" : "checkbox",
+                            "isWidgetRelated" : true,
+                            "relatedWidget" : "affliatedCompany",
+                            "checkValue" : "{$formValues['eQuestionnaire']['businessDetails']['affliatedCompany']['hasaffliatedCompany']}",
+                            "matchValue" : [
+                                "Yes",
+                                "hasaffliatedCompanyYes"
+                            ],
+                            "isChecked" : true,
+                            "label" : "Cross liability",
+                            "eQuotationVisibility" : true,
+                            "fieldName" : "crossLiability"
+                        },
+                        {
+                            "type" : "checkbox",
+                            "fieldName" : "deliveryRisks",
+                            "label" : "Including cover for loading/ unloading and delivery risks",
+                            "isChecked" : true,
+                            "eQuotationVisibility" : true
+                        },
+                        {
+                            "type" : "checkbox",
+                            "fieldName" : "towingCharges",
+                            "label" : "Towing charges",
+                            "isChecked" : true,
+                            "eQuotationVisibility" : true
+                        },
+                        {
+                            "type" : "checkbox",
+                            "fieldName" : "designationProperty",
+                            "label" : "Designation of property",
+                            "isChecked" : true,
+                            "eQuotationVisibility" : true
+                        },
+                        {
+                            "type" : "checkbox",
+                            "fieldName" : "hoursClause",
+                            "label" : "72 Hours clause",
+                            "isChecked" : true,
+                            "eQuotationVisibility" : true
+                        },
+                        {
+                            "type" : "checkbox",
+                            "fieldName" : "nominatedLoss",
+                            "label" : "Nominated Loss Adjuster Clause",
+                            "isChecked" : true,
+                            "eQuotationVisibility" : true
+                        },
+                        {
+                            "type" : "checkbox",
+                            "fieldName" : "primaryInsuranceClause",
+                            "label" : "Primary Insurance Clause",
+                            "isChecked" : true,
+                            "eQuotationVisibility" : true
+                        },
+                        {
+                            "type" : "checkbox",
+                            "fieldName" : "paymentAccounts",
+                            "label" : "Payment on accounts clause-75%",
+                            "isChecked" : true,
+                            "eQuotationVisibility" : true
+                        },
+                        {
+                            "type" : "claimHistoryView",
+                            "fieldName" : "claimsHistory",
+                            "label" : "Claims History",
+                            "eQuotationVisibility" : true,
+                            "type_col" : false,
+                            "style" : {},
+                            "columns" : [
+                                {
+                                    "label" : "Amount",
+                                    "fieldname" : "amount",
+                                    "aed" : true,
+                                    "columnWidth" : "25%"
+                                },
+                                {
+                                    "label" : "Description of Loss",
+                                    "fieldname" : "descriptionofloss",
+                                    "columnWidth" : "75%"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "updated_at" : ISODate("2019-11-13T14:05:50.000Z"),
+    "created_at" : ISODate("2019-11-13T03:55:13.000Z")
+}

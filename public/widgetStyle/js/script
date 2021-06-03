@@ -1,0 +1,58 @@
+    // Add the following code if you want the name of the file appear on select
+     $(".custom-file-input").on("change", function() {
+          var fileName = $(this).val().split("\\").pop();
+          $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+       });
+
+      
+
+        //for left collapsible window
+
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar, #content').toggleClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+
+        // for timer to work
+
+$(document).ready(function() {
+setInterval( function() {
+var hours = new Date().getHours();
+$(".hours").html(( hours < 10 ? "0" : "" ) + hours);
+}, 1000);
+setInterval( function() {
+var minutes = new Date().getMinutes();
+$(".min").html(( minutes < 10 ? "0" : "" ) + minutes);
+},1000);
+setInterval( function() {
+var seconds = new Date().getSeconds();
+$(".sec").html(( seconds < 10 ? "0" : "" ) + seconds);
+},1000);
+});
+
+
+
+
+//for form
+
+$(function () {
+  let show = 'show';
+  
+  $('input').on('checkval', function () {
+    let label = $(this).next('label');
+    if(this.value !== '') {
+      label.addClass(show);
+   } else {
+      label.removeClass(show);
+    }
+  }).on('keyup', function () {
+    $(this).trigger('checkval');
+  }); 
+});

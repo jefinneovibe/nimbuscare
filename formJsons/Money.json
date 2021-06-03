@@ -1,0 +1,2268 @@
+{
+    "_id" : ObjectId("5dfb661ad16899732f35d5fc"),
+    "name" : "Money",
+    "worktypeId" : ObjectId("5c99b0c8722a1657885ed6ed"),
+    "stages" : {
+        "eQuestionnaire" : {
+            "name" : "E Questionnaire",
+            "steps" : {
+                "basicDetails" : {
+                    "name" : "Basic Details",
+                    "rows" : [
+                        {
+                            "config" : "",
+                            "fields" : [
+                                {
+                                    "widgetType" : "Text",
+                                    "sort" : 1,
+                                    "config" : {
+                                        "label" : "Please Enter The Full Name Of Your Enterprise / Individual",
+                                        "placeHolder" : "Please enter the full name of your Enterprise / Individual",
+                                        "fieldName" : "firstName",
+                                        "id" : "firstName",
+                                        "eSlipVisibility" : true,
+                                        "validation" : {
+                                            "required" : true
+                                        },
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "12"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "config" : "",
+                            "fields" : [
+                                {
+                                    "widgetType" : "Textarea",
+                                    "sort" : 2,
+                                    "config" : {
+                                        "label" : "Address Line 1",
+                                        "placeHolder" : "Address line 1",
+                                        "fieldName" : "address1",
+                                        "validation" : {
+                                            "required" : true
+                                        },
+                                        "id" : "address1",
+                                        "eSlipVisibility" : true,
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "6",
+                                            "rows" : "1"
+                                        }
+                                    }
+                                },
+                                {
+                                    "widgetType" : "Textarea",
+                                    "sort" : 3,
+                                    "config" : {
+                                        "label" : "Address Line 2",
+                                        "placeHolder" : "Address line 2",
+                                        "fieldName" : "address2",
+                                        "id" : "address2",
+                                        "eSlipVisibility" : true,
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "6",
+                                            "rows" : "1"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "config" : "",
+                            "fields" : [
+                                {
+                                    "widgetType" : "Country",
+                                    "sort" : 4,
+                                    "config" : {
+                                        "label" : "Country",
+                                        "placeHolder" : "Country",
+                                        "fieldName" : "country",
+                                        "id" : "country",
+                                        "eSlipVisibility" : false,
+                                        "relation" : {
+                                            "relatedTo" : "emirate"
+                                        },
+                                        "style" : {
+                                            "col_width" : "3"
+                                        }
+                                    }
+                                },
+                                {
+                                    "widgetType" : "Emirate",
+                                    "sort" : 5,
+                                    "config" : {
+                                        "label" : "Emirate",
+                                        "placeHolder" : "Emirate",
+                                        "fieldName" : "emirate",
+                                        "id" : "emirate",
+                                        "eSlipVisibility" : false,
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "3"
+                                        }
+                                    }
+                                },
+                                {
+                                    "widgetType" : "Text",
+                                    "sort" : 6,
+                                    "config" : {
+                                        "label" : "City",
+                                        "placeHolder" : "City",
+                                        "fieldName" : "city",
+                                        "id" : "city",
+                                        "validation" : {
+                                            "required" : true
+                                        },
+                                        "eSlipVisibility" : false,
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "3"
+                                        }
+                                    }
+                                },
+                                {
+                                    "widgetType" : "Text",
+                                    "sort" : 7,
+                                    "config" : {
+                                        "label" : "PO Box",
+                                        "placeHolder" : "PO Box",
+                                        "fieldName" : "pin",
+                                        "id" : "pin",
+                                        "validation" : {
+                                            "required" : true
+                                        },
+                                        "eSlipVisibility" : false,
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "3"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "validations" : [
+                        {
+                            "field" : "firstName",
+                            "validation" : {
+                                "required" : true,
+                                "maxlength" : 150
+                            },
+                            "messages" : {
+                                "required" : "Enter first name",
+                                "maxlength" : "Maximum length exceeded"
+                            }
+                        },
+                        {
+                            "field" : "checkk[detail]",
+                            "validation" : {
+                                "required" : true
+                            },
+                            "messages" : {
+                                "required" : "Enter address 1"
+                            }
+                        },
+                        {
+                            "field" : "address1",
+                            "validation" : {
+                                "required" : true
+                            },
+                            "messages" : {
+                                "required" : "Enter address 1"
+                            }
+                        },
+                        [],
+                        {
+                            "field" : "country",
+                            "validation" : {
+                                "required" : true
+                            },
+                            "messages" : {
+                                "required" : "Select country"
+                            }
+                        },
+                        {
+                            "field" : "emirate",
+                            "validation" : {
+                                "required" : true
+                            },
+                            "messages" : {
+                                "required" : "Select emirate"
+                            }
+                        },
+                        {
+                            "field" : "city",
+                            "validation" : {
+                                "required" : true
+                            },
+                            "messages" : {
+                                "required" : "Enter city"
+                            }
+                        },
+                        {
+                            "field" : "pin",
+                            "validation" : {
+                                "required" : true,
+                                "maxlength" : 6,
+                                "digits" : "true"
+                            },
+                            "messages" : {
+                                "required" : "Enter pin",
+                                "maxlength" : "maximum length exceeded",
+                                "digits" : "Only numbers are allowed."
+                            }
+                        }
+                    ]
+                },
+                "businessDetails" : {
+                    "name" : "Business Details",
+                    "rows" : [
+                        {
+                            "config" : {},
+                            "fields" : [
+                                {
+                                    "widgetType" : "BusinessInsured",
+                                    "sort" : 1,
+                                    "config" : {
+                                        "label" : "Business Of The Insured ",
+                                        "placeHolder" : "Business of the Insured ",
+                                        "fieldName" : "businessType",
+                                        "id" : "businessType",
+                                        "eSlipVisibility" : false,
+                                        "validation" : {
+                                            "required" : true
+                                        },
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "12"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "config" : {
+                                "class" : "top_space"
+                            },
+                            "fields" : [
+                                {
+                                    "widgetType" : "PlaceOfEmployment ",
+                                    "sort" : 2,
+                                    "config" : {
+                                        "label" : "Geographical Area",
+                                        "placeHolder" : "Geographical Area",
+                                        "fieldName" : "placeOfEmployment",
+                                        "select_class" : "required",
+                                        "id" : "placeOfEmployment",
+                                        "eSlipVisibility" : false,
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "12"
+                                        }
+                                    }
+                                }
+                            ]
+                        },                      
+                        {
+                            "config" : "",
+                            "fields" : [                                
+                                {
+                                    "widgetType" : "Text",
+                                    "sort" : 2,
+                                    "config" : {
+                                        "label" : "Estimated Annual Carrying",
+                                        "placeHolder" : "Estimated Annual Carrying",
+                                        "fieldName" : "estimatedannualcarrying",
+                                        "id" : "estimatedannualcarrying",
+                                        "eSlipVisibility" : true,
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "validation" : {
+                                            "required" : true
+                                        },
+                                        "style" : {
+                                            "col_width" : "4"
+                                        },
+                                        "aed" : "true"
+                                    }
+                                }
+                            ]
+                        },   
+                        {
+                            "config" : {},
+                            "fields" : [                               
+                                {
+                                    "widgetType" : "RadioWithTwoChildren",
+                                    "sort" : 7,
+                                    "config" : {
+                                        "label" : "Do you have multiple locations?",
+                                        "placeHolder" : "multiple locations",
+                                        "fieldName" : "multipleLocations",
+                                        "label_width" : "col-adjust",
+                                        "field_width" : "col-12",
+                                        "id" : "multipleLocations[hasmultipleLocations]",
+                                        "valueKey" : "hasmultipleLocations",
+                                        "valueArr" : "multipleLocations",
+                                        "idToShowChildren" : "hasmultipleLocationsYes",
+                                        "idToShowChildrenNo" : "hasmultipleLocationsNo",
+                                        "options" : [
+                                            {
+                                                "option_id" : "hasmultipleLocationsYes",
+                                                "option_width" : 1,
+                                                "option_value" : "Yes"
+                                            },
+                                            {
+                                                "option_id" : "hasmultipleLocationsNo",
+                                                "option_width" : 1,
+                                                "option_value" : "No",
+                                                "default":true
+                                            }
+                                        ],
+                                        "children" : [
+                                            {
+                                                "widgetType" : "FormMultiplier",
+                                                "sort" : 7,
+                                                "config" : {
+                                                    "label" : "Location Details",
+                                                    "fieldName" : "tpl",
+                                                    "valueKey" : "locationDetails",
+                                                    "valueArr" : "tpl",
+                                                    "id" : "tpDetails",
+                                                    "label_class" : "col-1",
+                                                    "field_class" : "col-10",
+                                                    "children" : [],
+                                                    "eSlipVisibility" : false,
+                                                    "relation" : {
+                                                        "relatedTo" : false
+                                                    },
+                                                    "style" : {
+                                                        "col_width" : "12"
+                                                    }
+                                                }
+                                            }              
+                                         
+                                        
+                                    ],
+                                    "children1" : [                                                        
+                                        {
+                                            "widgetType" : "Text",
+                                            "sort" : 7,
+                                            "config" : {
+                                                "label" : "Location Name",
+                                                "placeHolder" : "Location Name",
+                                                "fieldName" : "multipleLocations[locationName]",
+                                                "id" : "locationName",
+                                                "valueKey" : "locationName",
+                                                "viewStatus" : true,
+                                                "eQuotationVisibility" : true,
+                                                "validation" : {
+                                                    "required" : true
+                                                },
+                                                "class" : [
+                                                    "required"
+                                                ],
+                                                "relation" : {
+                                                    "relatedTo" : false
+                                                },
+                                                "style" : {
+                                                    "col_width" : "3"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "widgetType" : "Text",
+                                            "sort" : 7,
+                                            "config" : {
+                                                "label" : "Safe Details",
+                                                "placeHolder" : "Safe Details",
+                                                "fieldName" : "multipleLocations[safeDetails]",
+                                                "id" : "safeDetails",
+                                                "valueKey" : "safeDetails",
+                                                "viewStatus" : true,
+                                                "eQuotationVisibility" : true,
+                                                "validation" : {
+                                                    "required" : true
+                                                },
+                                                "class" : [
+                                                    "required"
+                                                ],
+                                                "relation" : {
+                                                    "relatedTo" : false
+                                                },
+                                                "style" : {
+                                                    "col_width" : "3"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "widgetType" : "RadioButton",
+                                            "sort" : 2,
+                                            "config" : {
+                                                "label" : "Is money being transited through agencies",
+                                                "placeHolder" : "Is money being transited through a agencies",
+                                                "fieldName" : "multipleLocations[ismoneytransitedagencies]",
+                                                "id" : "ismoneytransitedagencies", 
+                                                "valueKey" : "ismoneytransitedagencies",                                                                              
+                                                "eSlipVisibility" : false, 
+                                                "validation" : {
+                                                    "required" : true
+                                                },  
+                                                "class" : [
+                                                    "required"
+                                                ],                                    
+                                                "relation" : {
+                                                    "relatedTo" : false
+                                                },
+                                                "style" : {
+                                                    "col_width" : "4"
+                                                },
+                                                "options" : [
+                                                    {
+                                                        "option_id" : "ismoneytransitedagenciesYes",
+                                                        "option_width" : 1,
+                                                        "option_value" : "Yes"
+                                                    },
+                                                    {
+                                                        "option_id" : "ismoneytransitedagenciesNo",
+                                                        "option_width" : 1,                                                
+                                                        "option_value" : "No",
+                                                        "default":true
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "widgetType" : "RadioButton",
+                                            "sort" : 2,
+                                            "config" : {
+                                                "label" : "Is the Pasport of the cash carrying employee(s) held at the custody of the Insured when they are not in vacation",
+                                                "placeHolder" : "Is the Pasport of the cash carrying employee(s) held at the custody of the Insured when they are not in vacation",
+                                                "fieldName" : "multipleLocations[passportundercustody]",
+                                                "id" : "passportundercustody",
+                                                "valueKey" : "passportundercustody",
+                                                "eSlipVisibility" : true, 
+                                                "validation" : {
+                                                    "required" : true
+                                                }, 
+                                                "class" : [
+                                                    "required"
+                                                ],                                  
+                                                "relation" : {
+                                                    "relatedTo" : false
+                                                },
+                                                "style" : {
+                                                    "col_width" : "7"
+                                                },
+                                                "options" : [
+                                                    {
+                                                        "option_id" : "passportundercustodyYes",
+                                                        "option_width" : 1,
+                                                        "option_value" : "Yes"
+                                                    },
+                                                    {
+                                                        "option_id" : "passportundercustodyNo",
+                                                        "option_width" : 1,
+                                                        "option_value" : "No",
+                                                        "default":true                                             
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "widgetType" : "Text",
+                                            "sort" : 2,
+                                            "config" : {
+                                                "label" : "Limit of Money at private dwellings of employees/directors",
+                                                "placeHolder" : "Limit of Money at private dwellings of employees/directors",
+                                                "fieldName" : "multipleLocations[moneylimitatprivatedwellings]",
+                                                "id" : "moneylimitatprivatedwellings",
+                                                "valueKey" : "moneylimitatprivatedwellings",
+                                                "eSlipVisibility" : true,
+                                                "relation" : {
+                                                    "relatedTo" : false
+                                                },
+                                                "validation" : {
+                                                    "required" : true
+                                                },
+                                                "class" : [
+                                                    "required"
+                                                ],
+                                                "style" : {
+                                                    "col_width" : "4"
+                                                },
+                                                "aed" : "true"
+                                            }
+                                        },
+                                        {
+                                            "widgetType" : "Text",
+                                            "sort" : 2,
+                                            "config" : {
+                                                "label" : "Limit of Money while in office premises during working hours ",
+                                                "placeHolder" : "Limit of Money while in office premises during working hours",
+                                                "fieldName" : "multipleLocations[moneylimitinofficepremises]",
+                                                "id" : "moneylimitinofficepremises",
+                                                "valueKey" : "moneylimitinofficepremises",
+                                                "eSlipVisibility" : true,
+                                                "relation" : {
+                                                    "relatedTo" : false
+                                                },
+                                                "validation" : {
+                                                    "required" : true
+                                                },
+                                                "class" : [
+                                                    "required"
+                                                ],
+                                                "style" : {
+                                                    "col_width" : "4"
+                                                },
+                                                "aed" : "true"
+                                            }
+                                        },
+                                        {
+                                            "widgetType" : "Text",
+                                            "sort" : 2,
+                                            "config" : {
+                                                "label" : "Limit of Money in transit any one loss",
+                                                "placeHolder" : "Limit of Money in transit any one loss",
+                                                "fieldName" : "multipleLocations[moneylimittransit]",
+                                                "id" : "moneylimittransit",
+                                                "valueKey" : "moneylimittransit",
+                                                "eSlipVisibility" : true,
+                                                "relation" : {
+                                                    "relatedTo" : false
+                                                },
+                                                "validation" : {
+                                                    "required" : true
+                                                },
+                                                "class" : [
+                                                    "required"
+                                                ],
+                                                "style" : {
+                                                    "col_width" : "4"
+                                                },
+                                                "aed" : "true"
+                                            }
+                                        },
+                                        {
+                                            "widgetType" : "Text",
+                                            "sort" : 2,
+                                            "config" : {
+                                                "label" : "Limit of Money while in Locked/Safe room ",
+                                                "placeHolder" : "Limit of Money while in Locked/Safe room",
+                                                "fieldName" : "multipleLocations[moneylimitinlockedroom]",
+                                                "id" : "moneylimitinlockedroom",
+                                                "valueKey" : "moneylimitinlockedroom",
+                                                "eSlipVisibility" : true,
+                                                "relation" : {
+                                                    "relatedTo" : false
+                                                },
+                                                "validation" : {
+                                                    "required" : true
+                                                },
+                                                "class" : [
+                                                    "required"
+                                                ],
+                                                "style" : {
+                                                    "col_width" : "4"
+                                                },
+                                                "aed" : "true"
+                                            }
+                                        },
+                                        {
+                                            "widgetType" : "Text",
+                                            "sort" : 2,
+                                            "config" : {
+                                                "label" : "Limit of Money in premises during business hours",
+                                                "placeHolder" : "Limit of Money in premises during business hours",
+                                                "fieldName" : "multipleLocations[moneylimitinbusinesshours]",
+                                                "id" : "moneylimitinbusinesshours",
+                                                "valueKey" :"moneylimitinbusinesshours",
+                                                "eSlipVisibility" : true,
+                                                "relation" : {
+                                                    "relatedTo" : false
+                                                },
+                                                "validation" : {
+                                                    "required" : true
+                                                },
+                                                "class" : [
+                                                    "required"
+                                                ],
+                                                "style" : {
+                                                    "col_width" : "4"
+                                                },
+                                                "aed" : "true"
+                                            }
+                                        },
+                                        {
+                                            "widgetType" : "Textarea",
+                                            "sort" : 2,
+                                            "config" : {
+                                                "label" : "Location",
+                                                "placeHolder" : "Location",
+                                                "fieldName" : "multipleLocations[location]",
+                                                "id" : "location",
+                                                "valueKey" : "location",
+                                                "eSlipVisibility" : true,
+                                                "relation" : {
+                                                    "relatedTo" : false
+                                                },
+                                                "validation" : {
+                                                    "required" : true
+                                                },
+                                                "class" : [
+                                                    "required"
+                                                ],
+                                                "style" : {
+                                                    "col_width" : "4",
+                                                    "rows" : "1",
+                                                    "margin-top" : "21px"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "widgetType" : "Textarea",
+                                            "sort" : 3,
+                                            "config" : {
+                                                "label" : "Transit Routes",
+                                                "placeHolder" : "Transit Routes",
+                                                "fieldName" : "multipleLocations[transitroutes]",
+                                                "id" : "transitroutes",
+                                                "valueKey" :"transitroutes",
+                                                "eSlipVisibility" : true,
+                                                "relation" : {
+                                                    "relatedTo" : false
+                                                },
+                                                "validation" : {
+                                                    "required" : true
+                                                },
+                                                "class" : [
+                                                    "required"
+                                                ],
+                                                "style" : {
+                                                    "col_width" : "4",
+                                                    "rows" : "1"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "widgetType" : "Textarea",
+                                            "sort" : 2,
+                                            "config" : {
+                                                "label" : "Territorial Limits",
+                                                "placeHolder" : "Territorial Limits",
+                                                "fieldName" : "multipleLocations[terristoriallimits]",
+                                                "id" : "terristoriallimits",
+                                                "valueKey" :"terristoriallimits",
+                                                "eSlipVisibility" : true,
+                                                "relation" : {
+                                                    "relatedTo" : false
+                                                },
+                                                "validation" : {
+                                                    "required" : true
+                                                },
+                                                "class" : [
+                                                    "required"
+                                                ],
+                                                "style" : {
+                                                    "col_width" : "4",
+                                                    "rows" : "1"
+                                                }
+                                            }
+                                        }
+                                    
+                                ],
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "12"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "validations" : [
+                        {
+                            "field" : "businessType",
+                            "validation" : {
+                                "required" : true
+                            },
+                            "messages" : {
+                                "required" : "Select business of the insured"
+                            }
+                        },
+                        {
+                            "field" : "location",
+                            "validation" : {
+                                "required" : true
+                            },
+                            "messages" : {
+                                "required" : "Enter Location"
+                            }
+                        },
+                        {
+                            "field" : "estimatedannualcarrying",
+                            "validation" : {
+                                "required" : true,
+                                "amount" : true
+                            },
+                            "messages" : {
+                                "required" : "Enter Estimated Annual carrying",
+                                "amount" : "Only numbers are allowed."
+                            }
+                        }
+                    ]
+                },
+                "locationDetails" : {
+                    "name" : "Location Details",
+                    "hidden" : 2,
+                    "rows" : [
+                        {
+                            "config" : "",
+                            "fields" : [
+                                {
+                                    "widgetType" : "Text",
+                                    "sort" : 7,
+                                    "config" : {
+                                        "label" : "Location Name",
+                                        "placeHolder" : "Location Name",
+                                        "fieldName" : "locationName",
+                                        "id" : "locationName",
+                                        "viewStatus" : true,
+                                        "eQuotationVisibility" : true,
+                                        "validation" : {
+                                            "required" : true
+                                        },
+                                        "class" : [
+                                            "required"
+                                        ],
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "3"
+                                        }
+                                    }
+                                },
+                                {
+                                    "widgetType" : "Text",
+                                    "sort" : 7,
+                                    "config" : {
+                                        "label" : "Safe Details",
+                                        "placeHolder" : "Safe Details",
+                                        "fieldName" : "safeDetails",
+                                        "id" : "safeDetails",
+                                        "valueKey" : "safeDetails",
+                                        "viewStatus" : true,
+                                        "eQuotationVisibility" : true,
+                                        "validation" : {
+                                            "required" : true
+                                        },
+                                        "class" : [
+                                            "required"
+                                        ],
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "3"
+                                        }
+                                    }
+                                },
+                                {
+                                    "widgetType" : "RadioButton",
+                                    "sort" : 2,
+                                    "config" : {
+                                        "label" : "Is money being transited through agencies",
+                                        "placeHolder" : "Is money being transited through a agencies",
+                                        "fieldName" : "ismoneytransitedagencie",
+                                        "id" : "ismoneytransitedagencie",                                                                              
+                                        "eSlipVisibility" : false, 
+                                        "validation" : {
+                                            "required" : true
+                                        },                                      
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "class" : [
+                                            "required"
+                                        ],
+                                        "style" : {
+                                            "col_width" : "4"
+                                        },
+                                        "options" : [
+                                            {
+                                                "option_id" : "ismoneytransitedagencieYes",
+                                                "option_width" : 1,
+                                                "option_value" : "Yes"
+                                            },
+                                            {
+                                                "option_id" : "ismoneytransitedagencieNo",
+                                                "option_width" : 1,                                                
+                                                "option_value" : "No",
+                                                "default":true
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "widgetType" : "RadioButton",
+                                    "sort" : 2,
+                                    "config" : {
+                                        "label" : "Is the Pasport of the cash carrying employee(s) held at the custody of the Insured when they are not in vacation",
+                                        "placeHolder" : "Is the Pasport of the cash carrying employee(s) held at the custody of the Insured when they are not in vacation",
+                                        "fieldName" : "passportundercustod",
+                                        "id" : "passportundercustod",
+                                        "eSlipVisibility" : true, 
+                                        "validation" : {
+                                            "required" : true
+                                        },  
+                                        "class" : [
+                                            "required"
+                                        ],                                 
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "7"
+                                        },
+                                        "options" : [
+                                            {
+                                                "option_id" : "passportundercustodYes",
+                                                "option_width" : 1,
+                                                "option_value" : "Yes"
+                                            },
+                                            {
+                                                "option_id" : "passportundercustodNo",
+                                                "option_width" : 1,
+                                                "option_value" : "No",
+                                                "default":true                                             
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "widgetType" : "Text",
+                                    "sort" : 2,
+                                    "config" : {
+                                        "label" : "Limit of Money at private dwellings of employees/directors",
+                                        "placeHolder" : "Limit of Money at private dwellings of employees/directors",
+                                        "fieldName" : "moneylimitatprivatedwellings",
+                                        "id" : "moneylimitatprivatedwellings",
+                                        "viewStatus" : true,
+                                        "eSlipVisibility" : true,
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "validation" : {
+                                            "required" : true
+                                        },
+                                          "class" : [
+                                            "required"
+                                        ],
+                                        "style" : {
+                                            "col_width" : "4"
+                                        },
+                                        "aed" : "true"
+                                    }
+                                },
+                                {
+                                    "widgetType" : "Text",
+                                    "sort" : 2,
+                                    "config" : {
+                                        "label" : "Limit of Money while in office premises during working hours ",
+                                        "placeHolder" : "Limit of Money while in office premises during working hours",
+                                        "fieldName" : "moneylimitinofficepremises",
+                                        "id" : "moneylimitinofficepremises",
+                                        "eSlipVisibility" : true,
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "validation" : {
+                                            "required" : true
+                                        },
+                                        "class" : [
+                                            "required"
+                                        ],
+                                        "style" : {
+                                            "col_width" : "4"
+                                        },
+                                        "aed" : "true"
+                                    }
+                                },
+                                {
+                                    "widgetType" : "Text",
+                                    "sort" : 2,
+                                    "config" : {
+                                        "label" : "Limit of Money in transit any one loss",
+                                        "placeHolder" : "Limit of Money in transit any one loss",
+                                        "fieldName" : "moneylimittransit",
+                                        "id" : "moneylimittransit",
+                                        "eSlipVisibility" : true,
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "validation" : {
+                                            "required" : true
+                                        },
+                                        "class" : [
+                                            "required"
+                                        ],
+                                        "style" : {
+                                            "col_width" : "4"
+                                        },
+                                        "aed" : "true"
+                                    }
+                                },
+                                {
+                                    "widgetType" : "Text",
+                                    "sort" : 2,
+                                    "config" : {
+                                        "label" : "Limit of Money while in Locked/Safe room ",
+                                        "placeHolder" : "Limit of Money while in Locked/Safe room",
+                                        "fieldName" : "moneylimitinlockedroom",
+                                        "id" : "moneylimitinlockedroom",
+                                        "eSlipVisibility" : true,
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "validation" : {
+                                            "required" : true
+                                        },
+                                        "class" : [
+                                            "required"
+                                        ],
+                                        "style" : {
+                                            "col_width" : "4"
+                                        },
+                                        "aed" : "true"
+                                    }
+                                },
+                                {
+                                    "widgetType" : "Text",
+                                    "sort" : 2,
+                                    "config" : {
+                                        "label" : "Limit of Money in premises during business hours",
+                                        "placeHolder" : "Limit of Money in premises during business hours",
+                                        "fieldName" : "moneylimitinbusinesshours",
+                                        "id" : "moneylimitinbusinesshours",
+                                        "eSlipVisibility" : true,
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "validation" : {
+                                            "required" : true
+                                        },
+                                        "class" : [
+                                            "required"
+                                        ],
+                                        "style" : {
+                                            "col_width" : "4"
+                                        },
+                                        "aed" : "true"
+                                    }
+                                },
+                                {
+                                    "widgetType" : "Textarea",
+                                    "sort" : 2,
+                                    "config" : {
+                                        "label" : "Location",
+                                        "placeHolder" : "Location",
+                                        "fieldName" : "location",
+                                        "id" : "location",
+                                        "eSlipVisibility" : true,
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "validation" : {
+                                            "required" : true
+                                        },
+                                        "class" : [
+                                            "required"
+                                        ],
+                                        "style" : {
+                                            "col_width" : "4",
+                                            "rows" : "1",
+                                            "margin-top" : "21px"
+                                        }
+                                    }
+                                },
+                                {
+                                    "widgetType" : "Textarea",
+                                    "sort" : 3,
+                                    "config" : {
+                                        "label" : "Transit Routes",
+                                        "placeHolder" : "Transit Routes",
+                                        "fieldName" : "transitroutes",
+                                        "id" : "transitroutes",
+                                        "eSlipVisibility" : true,
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "validation" : {
+                                            "required" : true
+                                        },
+                                        "class" : [
+                                            "required"
+                                        ],
+                                        "style" : {
+                                            "col_width" : "4",
+                                            "rows" : "1"
+                                        }
+                                    }
+                                },
+                                {
+                                    "widgetType" : "Textarea",
+                                    "sort" : 2,
+                                    "config" : {
+                                        "label" : "Territorial Limits",
+                                        "placeHolder" : "Territorial Limits",
+                                        "fieldName" : "terristoriallimits",
+                                        "id" : "terristoriallimits",
+                                        "eSlipVisibility" : true,
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "validation" : {
+                                            "required" : true
+                                        },
+                                        "class" : [
+                                            "required"
+                                        ],
+                                        "style" : {
+                                            "col_width" : "4",
+                                            "rows" : "1"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "validations" : [
+                        {
+                            "field" : "businessType",
+                            "validation" : {
+                                "required" : true
+                            },
+                            "messages" : {
+                                "required" : "Select business of the insured"
+                            }
+                        },
+                        {
+                            "field" : "location",
+                            "validation" : {
+                                "required" : true
+                            },
+                            "messages" : {
+                                "required" : "Enter Location"
+                            }
+                        },
+                        {
+                            "field" : "locationName",
+                            "validation" : {
+                                "required" : true
+                            },
+                            "messages" : {
+                                "required" : "Enter Location Name"
+                            }
+                        },
+                        {
+                            "field" : "safeDetails",
+                            "validation" : {
+                                "required" : true
+                            },
+                            "messages" : {
+                                "required" : "Enter Safe Details"
+                            }
+                        },
+                        {
+                            "field" : "transitroutes",
+                            "validation" : {
+                                "required" : true
+                            },
+                            "messages" : {
+                                "required" : "Enter Transit Routes"
+                            }
+                        },
+                        {
+                            "field" : "terristoriallimits",
+                            "validation" : {
+                                "required" : true
+                            },
+                            "messages" : {
+                                "required" : "Enter Territorial Limits"
+                            }
+                        },
+                        {
+                            "field" : "moneylimittransit",
+                            "validation" : {
+                                "required" : true,
+                                "amount" : true
+                            },
+                            "messages" : {
+                                "required" : "Enter Limit of Money in transit any one loss",
+                                "amount" : "Only numbers are allowed."
+                            }
+                        },
+                        {
+                            "field" : "moneylimitinlockedroom",
+                            "validation" : {
+                                "required" : true,
+                                "amount" : true
+                            },
+                            "messages" : {
+                                "required" : "Enter Limit of Money while in Locked/ Safe room",
+                                "amount" : "Only numbers are allowed."
+                            }
+                        },
+                        {
+                            "field" : "moneylimitinofficepremises",
+                            "validation" : {
+                                "required" : true,
+                                "amount" : true
+                            },
+                            "messages" : {
+                                "required" : "Enter Limit of Money while in office premises during working hours",
+                                "amount" : "Only numbers are allowed."
+                            }
+                        },
+                        {
+                            "field" : "moneylimitatprivatedwellings",
+                            "validation" : {
+                                "required" : true,
+                                "amount" : true
+                            },
+                            "messages" : {
+                                "required" : "Enter Limut of Money at private dwellings of employees / directors",
+                                "amount" : "Only numbers are allowed."
+                            }
+                        },
+                        {
+                            "field" : "moneylimitinbusinesshours",
+                            "validation" : {
+                                "required" : true,
+                                "amount" : true
+                            },
+                            "messages" : {
+                                "required" : "Enter Limit of money in premises during Business Hours",
+                                "amount" : "Only numbers are allowed."
+                            }
+                        },
+                        {
+                            "field" : "estimatedannualcarrying",
+                            "validation" : {
+                                "required" : true,
+                                "amount" : true
+                            },
+                            "messages" : {
+                                "required" : "Enter Estimated Annual carrying",
+                                "amount" : "Only numbers are allowed."
+                            }
+                        },
+                        {
+                            "field" : "ismoneytransitedagencies",
+                            "validation" : {
+                                "required" : true
+                            },
+                            "message" : {
+                                "required" : "Select one of the options "
+                            }
+                        },
+                        {
+                            "field" : "passportundercustody",
+                            "validation" : {
+                                "required" : true
+                            },
+                            "message" : {
+                                "required" : "Select one of the options"
+                            }
+                        }
+                    ]
+                },
+                "policyDetails" : {
+                    "name" : "Previous Policy Details",
+                    "rows" : [
+                        {
+                            "config" : "",
+                            "fields" : [
+                                {
+                                    "widgetType" : "PolicyPeriod",
+                                    "sort" : 2,
+                                    "config" : {
+                                        "label" : "Period of Insurance",
+                                        "placeHolder" : "Period of Insurance",
+                                        "fieldName" : "policyPeriod",
+                                        "id" : "policyPeriod",
+                                        "eSlipVisibility" : true,
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "12"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "config" : "",
+                            "fields" : [
+                                {
+                                    "widgetType" : "ClaimHistoryWithColumns",
+                                    "sort" : 2,
+                                    "config" : {
+                                        "type" : false,
+                                        "label" : "Claims History",
+                                        "placeHolder" : "Select claims history",
+                                        "fieldName" : "claimsHistory",
+                                        "id" : "claimsHistory",
+                                        "eSlipVisibility" : true,
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "8"
+                                        },
+                                        "columns" : [
+                                            {
+                                                "label" : "Amount",
+                                                "fieldname" : "amount",
+                                                "aed" : true,
+                                                "columnWidth" : "25%"
+                                            },
+                                            {
+                                                "label" : "Cost & Description",
+                                                "fieldname" : "cost_&_Description",
+                                                "columnWidth" : "75%"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "validations" : [
+                        {
+                            "field" : "policyPeriod",
+                            "validation" : {
+                                "required" : true
+                            },
+                            "messages" : {
+                                "required" : "Select policy period"
+                            }
+                        },
+                        {
+                            "field" : "claimsHistory",
+                            "validation" : {
+                                "required" : true
+                            },
+                            "messages" : {
+                                "required" : "Select claims history"
+                            }
+                        }
+                    ]
+                },
+                "documents" : {
+                    "name" : "Documents",
+                    "rows" : [
+                        {
+                            "config" : "",
+                            "fields" : [
+                                {
+                                    "widgetType" : "pdfUpload",
+                                    "sort" : 1,
+                                    "config" : {
+                                        "label" : "Tax registration document",
+                                        "placeHolder" : "Drag your files or click here",
+                                        "fieldName" : "taxRegistrationDocument",
+                                        "id" : "taxRegistrationDocument",
+                                        "eSlipVisibility" : false,
+                                        "validation" : [],
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "3"
+                                        }
+                                    }
+                                },
+                                {
+                                    "widgetType" : "pdfUpload",
+                                    "sort" : 2,
+                                    "config" : {
+                                        "label" : "Trade license",
+                                        "placeHolder" : "Drag your files or click here",
+                                        "fieldName" : "tradeLiscense",
+                                        "id" : "tradeLiscense",
+                                        "eSlipVisibility" : false,
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "3"
+                                        }
+                                    }
+                                },
+                                {
+                                    "widgetType" : "pdfUpload",
+                                    "sort" : 3,
+                                    "config" : {
+                                        "label" : "List of location",
+                                        "placeHolder" : "Drag your files or click here",
+                                        "fieldName" : "listOflocationPdf",
+                                        "id" : "listOflocationPdf",
+                                        "eSlipVisibility" : false,
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "3"
+                                        }
+                                    }
+                                },
+                                {
+                                    "widgetType" : "pdfUpload",
+                                    "sort" : 4,
+                                    "config" : {
+                                        "label" : "Copy of policy",
+                                        "placeHolder" : "Drag your files or click here",
+                                        "fieldName" : "copyOfPolicyPdf",
+                                        "id" : "copyOfPolicyPdf",
+                                        "eSlipVisibility" : false,
+                                        "notRequired" : true,
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "3"
+                                        }
+                                    }
+                                },
+                                {
+                                    "widgetType" : "multipleUpload",
+                                    "sort" : 5,
+                                    "config" : {
+                                        "label" : "Upload your file",
+                                        "placeHolder" : "Drag your files or click here",
+                                        "fieldName" : "uploadYourFile",
+                                        "id" : "uploadYourFile",
+                                        "eSlipVisibility" : true
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "validations" : [
+                        {
+                            "field" : "taxRegistrationDocument",
+                            "validation" : {
+                                "required" : true,
+                                "extension" : "xls|csv|pdf|doc|txt|png|jpg|jpeg|xlss|docx|xlsx",
+                                "fileSize" : "2097152"
+                            },
+                            "messages" : {
+                                "required" : "Upload tax registration document",
+                                "extension" : "please upload valid document",
+                                "fileSize" : "Please upload a file less than 2MB"
+                            }
+                        },
+                        {
+                            "field" : "tradeLiscense",
+                            "validation" : {
+                                "required" : true,
+                                "extension" : "xls|csv|pdf|doc|txt|png|jpg|jpeg|xlss|docx|xlsx",
+                                "fileSize" : "2097152"
+                            },
+                            "messages" : {
+                                "required" : "Upload trade liscense",
+                                "extension" : "please upload valid document",
+                                "fileSize" : "Please upload a file less than 2MB"
+                            }
+                        },
+                        {
+                            "field" : "listOflocationPdf",
+                            "validation" : {
+                                "required" : true,
+                                "extension" : "xls|csv|pdf|doc|txt|png|jpg|jpeg|xlss|docx|xlsx",
+                                "fileSize" : "2097152"
+                            },
+                            "messages" : {
+                                "required" : "Upload list of Locations",
+                                "extension" : "please upload valid document",
+                                "fileSize" : "Please upload a file less than 2MB"
+                            }
+                        },
+                        {
+                            "field" : "copyOfPolicyPdf",
+                            "validation" : {
+                                "extension" : "xls|csv|pdf|doc|txt|png|jpg|jpeg|xlss|docx|xlsx",
+                                "fileSize" : "2097152"
+                            },
+                            "messages" : {
+                                "extension" : "please upload valid document",
+                                "fileSize" : "Please upload a file less than 2MB"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "eSlip" : {
+            "name" : "E Slip",
+            "steps" : {
+                "forms" : {
+                    "name" : "form",
+                    "rows" : [
+                        {
+                            "config" : "",
+                            "fields" : [                                
+                                {
+                                    "widgetType" : "checkbox",
+                                    "sort" : 1,
+                                    "config" : {
+                                        "label" : "Money carrying / pooling / storage by any group company employees / security agencies to be covered anywhere in the country",
+                                        "placeHolder" : "Money carrying / pooling / storage by any group company employees / security agencies to be covered anywhere in the country",
+                                        "fieldName" : "poolingCover",
+                                        "id" : "poolingCover",
+                                        "isChecked" : false,
+                                        "hasTextbox" : false,
+                                        "eQuotationVisibility" : true,
+                                        "validation" : {
+                                            "required" : true
+                                        },
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "12"
+                                        },
+                                        "defaultValue" : "poolingCoverNo",
+                                        "hasSelect" : false,
+                                        "options" : [
+                                            {
+                                                "option_id" : "poolingCoverYes",
+                                                "option_value" : "Yes"
+                                            },
+                                            {
+                                                "option_id" : "poolingCoverNo",
+                                                "option_value" : "No"
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "widgetType" : "Text",
+                                    "sort" : 8,
+                                    "config" : {
+                                        "label" : "Rate (Money in Transit)",
+                                        "placeHolder" : "Rate (Money in Transit)",
+                                        "preCustomerLabel" : "Target Rate (Money in Transit)",
+                                        "fieldName" : "RaterequiredMoneyinTransit",
+                                        "id" : "RaterequiredMoneyinTransit",
+                                        "eQuotationVisibility" : true,
+                                        "aed" : true,
+                                        "eQuoteTextboxValue" : true,
+                                        "eQuoteTextbox" : true,
+                                        "validation" : {
+                                            "required" : false
+                                        },
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "12"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "fields" : [
+                                {
+                                    "widgetType" : "Text",
+                                    "sort" : 9,
+                                    "config" : {
+                                        "label" : "Rate (Money in Safe)",
+                                        "preCustomerLabel" : "Target Rate (Money in Safe)",
+                                        "placeHolder" : "Rate (Money in Safe)",
+                                        "fieldName" : "RaterequiredMoneyinSafe",
+                                        "id" : "RaterequiredMoneyinSafe",
+                                        "eQuotationVisibility" : true,
+                                        "aed" : true,
+                                        "eQuoteTextboxValue" : true,
+                                        "eQuoteTextbox" : true,
+                                        "validation" : {
+                                            "required" : false
+                                        },
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "12"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "fields" : [
+                                {
+                                    "widgetType" : "Text",
+                                    "sort" : 9,
+                                    "config" : {
+                                        "label" : "Premium (Money in Transit)",
+                                        "preCustomerLabel" : "Target Premium (Money in Transit)",
+                                        "placeHolder" : "Premium (Money in Transit)",
+                                        "fieldName" : "PremiumrequiredMoneyinTransit",
+                                        "id" : "PremiumrequiredMoneyinTransit",
+                                        "eQuotationVisibility" : true,
+                                        "eQuoteTextboxValue" : true,
+                                        "aed" : true,
+                                        "eQuoteTextbox" : true,
+                                        "validation" : {
+                                            "required" : false
+                                        },
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "12"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "fields" : [
+                                {
+                                    "widgetType" : "Text",
+                                    "sort" : 9,
+                                    "config" : {
+                                        "label" : "Premium (Money in Safe)",
+                                        "preCustomerLabel" : "Target Premium (Money in Safe)",
+                                        "placeHolder" : "Premium (Money in Safe)",
+                                        "fieldName" : "PremiumrequiredMoneyinSafe",
+                                        "id" : "PremiumrequiredMoneyinSafe",
+                                        "eQuotationVisibility" : true,
+                                        "aed" : true,
+                                        "eQuoteTextboxValue" : true,
+                                        "eQuoteTextbox" : true,
+                                        "validation" : {
+                                            "required" : false
+                                        },
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "12"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "config" : "",
+                            "fields" : [
+                                {
+                                    "widgetType" : "Text",
+                                    "sort" : 6,
+                                    "config" : {
+                                        "label" : "Premium Payment Terms",
+                                        "placeHolder" : "Premium Payment Terms",
+                                        "fieldName" : "paymentTerms",
+                                        "id" : "paymentTerms",
+                                        "isCustomerResponse" : true,
+                                        "eQuoteTextbox" : true,
+                                        "eQuotationVisibility" : true,
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "12"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "config" : "",
+                            "fields" : [
+                                {
+                                    "widgetType" : "Text",
+                                    "sort" : 7,
+                                    "config" : {
+                                        "label" : "Brokerage (in %)",
+                                        "placeHolder" : "Enter here",
+                                        "fieldName" : "brokerage",
+                                        "id" : "brokerage",
+                                        "eQuotationVisibility" : true,
+                                        "eQuoteTextboxValue" : true,
+                                        "iClass" : "numberOnly rangeValidation",
+                                        "dataAttributes" : "data-min=20 data-max=100",
+                                        "eQuoteTextbox" : true,
+                                        "validation" : {
+                                            "required" : false
+                                        },
+                                        "class":[
+                                            "numberOnly" ,"rangeValidation"
+                                        ],
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "12"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "config" : {},
+                            "fields" : [
+                                {
+                                    "widgetType" : "Textarea",
+                                    "sort" : 9,
+                                    "config" : {
+                                        "label" : "Comments (if any)",
+                                        "placeHolder" : "Enter comments",
+                                        "fieldName" : "comments",
+                                        "id" : "comments",
+                                        "isCustomerResponse" : true,
+                                        "eQuotationVisibility" : true,
+                                        "eQuoteTextbox" : false,
+                                        "eQuoteTextArea" : true,
+                                        "validation" : {
+                                            "required" : false
+                                        },
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "12"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "config" : "",
+                            "fields" : [
+                                {
+                                    "widgetType" : "Text",
+                                    "sort" : 7,
+                                    "config" : {
+                                        "label" : "Last date for submitting the quotation",
+                                        "placeHolder" : "click to select a date",
+                                        "fieldName" : "lastDate",
+                                        "id" : "lastDate",
+                                        "class" : [
+                                            "add_datepicker"
+                                        ],
+                                        "datepicker" : true,
+                                        "eQuotationVisibility" : false,
+                                        "eQuoteTextbox" : true,
+                                        "eQuoteTextboxValue" : true,
+                                        "eQuoteTextboxHidden" : true,
+                                        "validation" : {
+                                            "required" : true
+                                        },
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "12"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "config" : {
+                                "class" : "d-none"
+                            },
+                            "fields" : [
+                                {
+                                    "widgetType" : "Text",
+                                    "sort" : 8,
+                                    "config" : {
+                                        "label" : "Warranty ",
+                                        "placeHolder" : "Enter here",
+                                        "fieldName" : "warranty",
+                                        "id" : "warranty",
+                                        "eQuotationVisibility" : true,
+                                        "eQuoteTextbox" : false,
+                                        "eQuoteTextArea" : true,
+                                        "validation" : {
+                                            "required" : false
+                                        },
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "12"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "config" : {
+                                "class" : "d-none"
+                            },
+                            "fields" : [
+                                {
+                                    "widgetType" : "Text",
+                                    "sort" : 9,
+                                    "config" : {
+                                        "label" : "Exclusion",
+                                        "placeHolder" : "Enter here",
+                                        "fieldName" : "exclusion",
+                                        "id" : "exclusion",
+                                        "eQuotationVisibility" : true,
+                                        "eQuoteTextbox" : false,
+                                        "eQuoteTextArea" : true,
+                                        "validation" : {
+                                            "required" : false
+                                        },
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "12"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "config" : {
+                                "class" : "d-none"
+                            },
+                            "fields" : [
+                                {
+                                    "widgetType" : "Text",
+                                    "sort" : 9,
+                                    "config" : {
+                                        "label" : "Special Condition",
+                                        "placeHolder" : "Enter here",
+                                        "fieldName" : "specialCondition",
+                                        "id" : "specialCondition",
+                                        "eQuotationVisibility" : true,
+                                        "eQuoteTextbox" : false,
+                                        "eQuoteTextArea" : true,
+                                        "validation" : {
+                                            "required" : false
+                                        },
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "12"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "validations" : [
+                        {
+                            "field" : "RaterequiredMoneyinTransit",
+                            "validation" : {
+                                "number" : true
+                            },
+                            "messages" : {
+                                "number" : "please enter a valid number"
+                            }
+                        },
+                        {
+                            "field" : "lastDate",
+                            "validation" : {
+                                "required" : true
+                            },
+                            "messages" : {
+                                "required" : "select a date"
+                            }
+                        },
+                        {
+                            "field" : "RaterequiredMoneyinSafe",
+                            "validation" : {
+                                "number" : true
+                            },
+                            "messages" : {
+                                "number" : "please enter a valid number"
+                            }
+                        },
+                        {
+                            "field" : "PremiumrequiredMoneyinTransit",
+                            "validation" : {
+                                "number" : true
+                            },
+                            "messages" : {
+                                "number" : "please enter a valid number"
+                            }
+                        },
+                        {
+                            "field" : "PremiumrequiredMoneyinSafe",
+                            "validation" : {
+                                "number" : true
+                            },
+                            "messages" : {
+                                "number" : "please enter a valid number"
+                            }
+                        },
+                        {
+                            "field" : "comments",
+                            "validation" : {
+                                "maxlength" : "200"
+                            },
+                            "messages" : {
+                                "maxlength" : "Maximum number of characters exceeds."
+                            }
+                        },
+                        {
+                            "field" : "brokerage",
+                            "validation" : {
+                                "range" : "[20,100]"
+                            },
+                            "messages" : {
+                                "required" : "Select brokerage.",
+                                "range" : "Please enter value in between 20 and 100."
+                            }
+                        },
+                        {
+                            "field" : "warranty",
+                            "validation" : {
+                                "required" : false
+                            },
+                            "messages" : {
+                                "required" : "Select warranty"
+                            }
+                        },
+                        {
+                            "field" : "exclusion",
+                            "validation" : {
+                                "required" : false
+                            },
+                            "messages" : {
+                                "required" : "Enter exclusion"
+                            }
+                        },
+                        {
+                            "field" : "specialCondition",
+                            "validation" : {
+                                "required" : false
+                            },
+                            "messages" : {
+                                "required" : "Enter special condition"
+                            }
+                        }
+                    ]
+                },
+                "review" : {
+                    "name" : "Review Fields",
+                    "fields" : [
+                        {
+                            "type" : "text",
+                            "fieldName" : "insured",
+                            "label" : "Insured",
+                            "value" : "{$formValues['eQuestionnaire']['basicDetails']['firstName']}",
+                            "eQuotationVisibility" : true,
+                            "statement" : ""
+                        },
+                        {
+                            "type" : "table",
+                            "isChecked" : true,
+                            "isWidgetRelated" : true,
+                            "relatedWidget" : "multipleLocations",
+                            "checkValue" : "{$formValues['eQuestionnaire']['businessDetails']['multipleLocations']['hasmultipleLocations']}",
+                            "matchValue" : [
+                                "No",
+                                "hasmultipleLocationsNo"
+                            ],
+                            "valuesRequired" : true,
+                            "eQuotationVisibility" : true,
+                            "fieldName" : "eslip_employeesDetails",
+                            "label" : "Location Details",
+                            "table" : [
+                                {
+                                    "columnName" : "Location Name",
+                                    "columnValue" : "{$formValues['eQuestionnaire']['businessDetails']['multipleLocations']['locationName']}"
+                                },
+                                {
+                                    "columnName" : "Safe Details",
+                                    "columnValue" : "{$formValues['eQuestionnaire']['businessDetails']['multipleLocations']['safeDetails']}"
+                                },
+                                {
+                                    "columnName" : "Is money being transited through agencies",
+                                    "isWidgetRelated" : true,
+                                    "relatedWidget" : "ismoneytransitedagencies",
+                                    "checkValue" : "{$formValues['eQuestionnaire']['businessDetails']['multipleLocations']['ismoneytransitedagencies']}",
+                                    "matchValue" : [
+                                        "No",
+                                        "ismoneytransitedagenciesNo"
+                                    ],
+                                    "value":"No"                                   
+                                },
+                                 {
+                                    "columnName" : "Is money being transited through agencies",
+                                    "isWidgetRelated" : true,
+                                    "relatedWidget" : "ismoneytransitedagencies",
+                                    "checkValue" : "{$formValues['eQuestionnaire']['businessDetails']['multipleLocations']['ismoneytransitedagencies']}",
+                                    "matchValue" : [
+                                        "Yes",
+                                        "ismoneytransitedagenciesYes"
+                                    ],
+                                    "value":"Yes"
+                                },
+                                {
+                                    "columnName" : "Is the Pasport of the cash carrying employee(s) held at the custody of the Insured when they are not in vacation",
+                                    "isWidgetRelated" : true,
+                                    "relatedWidget" : "passportundercustody",
+                                    "checkValue" : "{$formValues['eQuestionnaire']['businessDetails']['multipleLocations']['passportundercustody']}",
+                                    "matchValue" : [
+                                        "Yes",
+                                        "passportundercustodyYes"
+                                    ],
+                                    "value":"Yes"
+                                },
+                                {
+                                    "columnName" : "Is the Pasport of the cash carrying employee(s) held at the custody of the Insured when they are not in vacation",
+                                    "isWidgetRelated" : true,
+                                    "relatedWidget" : "passportundercustody",
+                                    "checkValue" : "{$formValues['eQuestionnaire']['businessDetails']['multipleLocations']['passportundercustody']}",
+                                    "matchValue" : [
+                                        "No",
+                                        "passportundercustodyNo"
+                                    ],
+                                    "value":"Yes"
+                                },
+                                {
+                                    "columnName" : "Limit of Money at private dwellings of employees/directors",
+                                    "columnValue" : "{$formValues['eQuestionnaire']['businessDetails']['multipleLocations']['moneylimitatprivatedwellings']}"
+                                },
+                                {
+                                    "columnName" : "Limit of Money while in office premises during working hours ",
+                                    "columnValue" : "{$formValues['eQuestionnaire']['businessDetails']['multipleLocations']['moneylimitinofficepremises']}"
+                                },
+                                {
+                                    "columnName" : "Limit of Money in transit any one loss",
+                                    "columnValue" : "{$formValues['eQuestionnaire']['businessDetails']['multipleLocations']['moneylimittransit']}"
+                                },
+                                {
+                                    "columnName" : "Limit of Money while in Locked/Safe room",
+                                    "columnValue" : "{$formValues['eQuestionnaire']['businessDetails']['multipleLocations']['moneylimitinlockedroom']}"
+                                },
+                                {
+                                    "columnName" : "Limit of Money in premises during business hours",
+                                    "columnValue" : "{$formValues['eQuestionnaire']['businessDetails']['multipleLocations']['moneylimitinbusinesshours']}"
+                                },
+                                {
+                                    "columnName" : "Location",
+                                    "columnValue" : "{$formValues['eQuestionnaire']['businessDetails']['multipleLocations']['location']}"
+                                },
+                                {
+                                    "columnName" : "Transit Routes",
+                                    "columnValue" : "{$formValues['eQuestionnaire']['businessDetails']['multipleLocations']['transitroutes']}"
+                                },
+                                {
+                                    "columnName" : "Territorial Limits",
+                                    "columnValue" : "{$formValues['eQuestionnaire']['businessDetails']['multipleLocations']['terristoriallimits']}"
+                                }
+                            ]
+                        },
+                        {
+                            "type" : "cover",
+                            "fieldName" : "cover",
+                            "label" : "Cover",
+                            "value" : "Definition of money ",
+                            "eQuotationVisibility" : true,
+                            "statement" : "Money includes cash, bank and currency notes, cheques, warrants, money orders, postal orders (crossed or open), bills of exchange, securities for money, credit card, debit card and the like, sales vouchers, credit coupons and other negotiable financial instruments, current postage stamps and insurance stamps belonging to the insured or where the insured deem responsible"
+                        },
+                        {
+                            "type" : "text",
+                            "fieldName" : "businessActivity",
+                            "label" : "Business Activity",
+                            "value" : "{$formValues['eQuestionnaire']['businessDetails']['businessType']['optionVal']}",
+                            "eQuotationVisibility" : true
+                        },
+                        {
+                            "type" : "text",
+                            "fieldName" : "geographicalArea",
+                            "label" : "Geographical Area",
+                            "value" : "{$formValues['eQuestionnaire']['businessDetails']['placeOfEmployment']['withinUAE']} {$formValues['eQuestionnaire']['businessDetails']['placeOfEmployment']['countryName']}",
+                            "eQuotationVisibility" : true
+                        },
+                        {
+                            "type" : "text",
+                            "fieldName" : "estimatedannualcarrying",
+                            "label" : "Estimated Annual carrying",
+                            "value" : "{$formValues['eQuestionnaire']['businessDetails']['estimatedannualcarrying']}"                            
+                        },
+                        {
+                            "type" : "text",
+                            "fieldName" : "policyPeriod",
+                            "label" : "Period of insurance",
+                            "value" : "{$formValues['eQuestionnaire']['policyDetails']['policyPeriod']['policyFrom']} - {$formValues['eQuestionnaire']['policyDetails']['policyPeriod']['policyTo'] }",
+                            "eQuotationVisibility" : true
+                        },
+                        {
+                            "type" : "checkbox",
+                            "label" : "Cover for loss or damage due to  Riots and Strikes",
+                            "eQuotationVisibility" : true,
+                            "fieldName" : "damageCover"
+                        },
+                        {
+                            "type" : "checkbox",
+                            "label" : "Cover for dishonesty  of the employees if found out within 7 days",
+                            "eQuotationVisibility" : true,
+                            "fieldName" : "dishonesty"
+                        },
+                        {
+                            "type" : "checkbox",
+                            "label" : "Cover for hold up",
+                            "eQuotationVisibility" : true,
+                            "fieldName" : "holdUp"
+                        },
+                        {
+                            "type" : "checkbox",
+                            "label" : "Loss or damage to cases / bags while being used for carriage of money",
+                            "eQuotationVisibility" : true,
+                            "fieldName" : "bagageCover"
+                        },
+                        {
+                            "type" : "checkbox",
+                            "label" : "Claims Preparation cost",
+                            "eQuotationVisibility" : true,
+                            "fieldName" : "preparationCost"
+                        },
+                        {
+                            "type" : "checkbox",
+                            "label" : "Automatic reinstatement of sum insured  at pro-rata additional premium",
+                            "eQuotationVisibility" : true,
+                            "fieldName" : "reinstatementPremium"
+                        },
+                        {
+                            "type" : "checkbox",
+                            "isBusinessRelated" : true,
+                            "relatedBusiness" : [
+                                13,
+                                19,
+                                21,
+                                25,
+                                30,
+                                33,
+                                37,
+                                38,
+                                46,
+                                50,
+                                51,
+                                54,
+                                58,
+                                62,
+                                63,
+                                64,
+                                74,
+                                87,
+                                88,
+                                91,
+                                92,
+                                100,
+                                101
+                            ],
+                            "isWidgetRelated" : false,
+                            "isChecked" : true,
+                            "valuesRequired" : true,
+                            "label" : "Automatic increase to 4 times the approved limits during week ends and public holidays for storage risks",
+                            "eQuotationVisibility" : true,
+                            "fieldName" : "automaticIncrease"
+                        },
+                        {
+                            "type" : "checkbox",
+                            "label" : "Loss notification – ‘as soon as reasonably practicable’",
+                            "eQuotationVisibility" : true,
+                            "fieldName" : "lossNotification"
+                        },
+                        {
+                            "type" : "checkbox",
+                            "label" : "Cancellation – 30 days notice by either party; refund of premium at pro-rata unless a claim has attached ",
+                            "eQuotationVisibility" : true,
+                            "fieldName" : "cancellation"
+                        },
+                        {
+                            "type" : "checkbox",
+                            "label" : "Third party money's for which responsibility is assumed will be covered",
+                            "eQuotationVisibility" : true,
+                            "fieldName" : "thirdParty"
+                        },
+                        {
+                            "type" : "checkbox",
+                            "label" : "Carry by own vehicle / hired vehicles and / or on foot personal money of owners",
+                            "eQuotationVisibility" : true,
+                            "fieldName" : "carryBy"
+                        },
+                        {
+                            "type" : "checkbox",
+                            "label" : "Brokers Claim Handling Clause : A loss notification received by the Insurance Broker will be deemed as a loss notification to Insurer. All communications flowing between the Insurer, Insured and the appointed Loss Surveyor should be channelized through the Broker, unless there is any unavoidable reasons compelling direct communications between the parties",
+                            "eQuotationVisibility" : true,
+                            "fieldName" : "brokerClaimClause"
+                        },
+                        {
+                            "type" : "checkbox",
+                            "label" : "Errors and Omissions clause",
+                            "eQuotationVisibility" : true,
+                            "fieldName" : "errorsOmissions"
+                        },
+                        {
+                            "type" : "checkbox",
+                            "label" : "Cover for personal assault",
+                            "eQuotationVisibility" : true,
+                            "fieldName" : "personalCover"
+                        },
+                        {
+                            "type" : "checkbox",
+                            "label" : "Auditor’s fees/ accountant fees",
+                            "eQuotationVisibility" : true,
+                            "fieldName" : "auditorFees",
+                            "check" : ""
+                        },
+                        {
+                            "type" : "checkbox",
+                            "label" : "Cover for damages sustained to safe",
+                            "eQuotationVisibility" : true,
+                            "fieldName" : "coverDamage"
+                        },
+                        {
+                            "type" : "checkbox",
+                            "label" : "Primary Insurance clause",
+                            "eQuotationVisibility" : true,
+                            "fieldName" : "primaryInsurance"
+                        },
+                        {
+                            "type" : "checkbox",
+                            "label" : "Payment on account clause",
+                            "eQuotationVisibility" : true,
+                            "fieldName" : "paymentClause"
+                        },
+                        {
+                            "type" : "checkbox",
+                            "label" : "Cover for loss from unattended vehicle if it was left in locked condition at designated parking areas",
+                            "eQuotationVisibility" : true,
+                            "fieldName" : "unattendedVehicle"
+                        },
+                        {
+                            "type" : "checkbox",
+                            "label" : "Cover for loss of money whilst in the personal possession of authorized employees (Worldwide cover)",
+                            "eQuotationVisibility" : true,
+                            "fieldName" : "moneyLossCover"
+                        },
+                        {
+                            "type" : "checkbox",
+                            "label" : "Automatic addition of location",
+                            "eQuotationVisibility" : true,
+                            "fieldName" : "locationAddition"
+                        },
+                        {
+                            "type" : "checkbox",
+                            "label" : "Loss or damage to personal effect",
+                            "eQuotationVisibility" : true,
+                            "fieldName" : "personalEffectCover"
+                        },
+                        {
+                            "type" : "checkbox",
+                            "label" : "Nominated Loss adjuster – Panel Crawford Intl, Cunningham Lindsey, Miller International, John Kidd LA, Insured can  select",
+                            "eQuotationVisibility" : true,
+                            "fieldName" : "nominatedLoss"
+                        },
+                        {
+                            "type" : "checkbox",
+                            "label" : "Cover to include house breaking, theft and burglary from safe or strong room and hold up or attempt of hold up",
+                            "eQuotationVisibility" : true,
+                            "fieldName" : "theftCover"
+                        },
+                        {
+                            "type" : "EslipFormMultiplier",
+                            "label" : "Location Details",
+                            "isWidgetRelated" : true,
+                            "relatedWidget" : "multipleLocations",
+                            "isChecked" : true,
+                            "checkValue" : "{$formValues['eQuestionnaire']['businessDetails']['multipleLocations']['hasmultipleLocations']}",
+                            "matchValue" : [
+                                "Yes",
+                                "hasmultipleLocationsYes"
+                            ],
+                            "valuesRequired" : true,
+                            "placeHolder" : "Location Details",
+                            "fieldName" : "eslip_locationDetails",
+                            "valueField" : "locationDetails",
+                            "id" : "eslip_locationDetails",
+                            "eSlipVisibility" : true,
+                            "childrenLabel" : [
+                                {
+                                    "locationName" : "Location Name",
+                                    "viewStatus" : true
+                                },
+                                {
+                                    "safeDetails" : "Safe Details",
+                                    "viewStatus" : true
+                                },
+                                {
+                                    "moneylimitatprivatedwellings" : "Limit of Money at private dwellings of employees/directors",
+                                    "viewStatus" : true
+                                }
+                            ]
+                        },
+                        {
+                            "type" : "claimHistoryView",
+                            "fieldName" : "claimsHistory",
+                            "label" : "Claims History",
+                            "eQuotationVisibility" : true,
+                            "type_col" : false,
+                            "style" : {
+                                "col_width" : "12",
+                                "tableWidth" : "66%"
+                            },
+                            "columns" : [
+                                {
+                                    "label" : "Amount",
+                                    "fieldname" : "amount",
+                                    "aed" : true,
+                                    "columnWidth" : "25%"
+                                },
+                                {
+                                    "label" : "cost & Description",
+                                    "fieldname" : "cost_&_Description",
+                                    "columnWidth" : "75%%"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "updated_at" : ISODate("2019-11-13T14:05:50.000Z"),
+    "created_at" : ISODate("2019-11-13T03:55:13.000Z")
+}

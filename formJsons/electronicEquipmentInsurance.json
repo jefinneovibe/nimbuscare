@@ -1,0 +1,1249 @@
+{
+    "_id" : ObjectId("5ef9f3b11115f93181b44279"),
+    "name" : "Electronic Equipment Insurance (04508)",
+    "worktypeId" :ObjectId("5ef9f21d1115f93181b40435"),
+    "stages" : {
+        "eQuestionnaire" : {
+            "name" : "E Questionnaire",
+            "steps" : {
+                "basicDetails" : {
+                    "name" : "Basic Details",
+                    "rows" : [
+                        {
+                            "config" : "",
+                            "fields" : [
+                                {
+                                    "widgetType" : "Text",
+                                    "sort" : 1,
+                                    "config" : {
+                                        "label" : "Please enter The Full Name Of Your Enterprise / Individual",
+                                        "placeHolder" : "Please enter the full name of your Enterprise / Individual",
+                                        "fieldName" : "firstName",
+                                        "id" : "firstName",
+                                        "eSlipVisibility" : true,
+                                        "validation" : {
+                                            "required" : true
+                                        },
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "12"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "config" : "",
+                            "fields" : [
+                                {
+                                    "widgetType" : "Text",
+                                    "sort" : 1,
+                                    "config" : {
+                                        "label" : "Email",
+                                        "placeHolder" : "Email",
+                                        "fieldName" : "email",
+                                        "id" : "email",
+                                        "eSlipVisibility" : true,
+                                        "validation" : {
+                                            "required" : true
+                                        },
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "4"
+                                        }
+                                    }
+                                },
+                                {
+                                    "widgetType" : "Text",
+                                    "sort" : 1,
+                                    "config" : {
+                                        "label" : "Date of Birth",
+                                        "placeHolder" : "Date of Birth",
+                                        "fieldName" : "dobDet",
+                                        "id" : "dobDet",
+                                         "datepicker" : true,
+                                        "eSlipVisibility" : true,
+                                        "validation" : {
+                                            "required" : true
+                                        }, "class" : [
+                                            "add_datepicker"
+                                        ],
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "4"
+                                        }
+                                    }
+                                },
+                                {
+                                    "widgetType" : "Text",
+                                    "sort" : 1,
+                                    "config" : {
+                                        "label" : "Nationality",
+                                        "placeHolder" : "Nationality",
+                                        "fieldName" : "nationality",
+                                        "id" : "nationality",
+                                        "eSlipVisibility" : true,
+                                        "validation" : {
+                                            "required" : true
+                                        },
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "4"
+                                        }
+                                    }
+                                }                               
+                            ]
+                        },
+                        {
+                            "config" : "",
+                            "fields" : [
+                                {
+                                    "widgetType" : "Textarea",
+                                    "sort" : 2,
+                                    "config" : {
+                                        "label" : "Address Line 1",
+                                        "placeHolder" : "Address line 1",
+                                        "fieldName" : "address1",
+                                        "id" : "address1",
+                                        "validation" : {
+                                            "required" : true
+                                        },
+                                        "eSlipVisibility" : true,
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "6",
+                                            "rows" : "1"
+                                        }
+                                    }
+                                },
+                                {
+                                    "widgetType" : "Textarea",
+                                    "sort" : 3,
+                                    "config" : {
+                                        "label" : "Area",
+                                        "placeHolder" : "Area",
+                                        "fieldName" : "address2",
+                                        "id" : "address2",
+                                        "eSlipVisibility" : true,
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "6",
+                                            "rows" : "1"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "config" : "",
+                            "fields" : [
+                                {
+                                    "widgetType" : "Country",
+                                    "sort" : 4,
+                                    "config" : {
+                                        "label" : "Country",
+                                        "placeHolder" : "Country",
+                                        "fieldName" : "country",
+                                        "id" : "country",
+                                        "eSlipVisibility" : false,
+                                        "relation" : {
+                                            "relatedTo" : "emirate"
+                                        },
+                                        "style" : {
+                                            "col_width" : "3"
+                                        }
+                                    }
+                                },
+                                {
+                                    "widgetType" : "Emirate",
+                                    "sort" : 5,
+                                    "config" : {
+                                        "label" : "Emirate",
+                                        "placeHolder" : "Emirate",
+                                        "fieldName" : "emirate",
+                                        "id" : "emirate",
+                                        "eSlipVisibility" : false,
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "3"
+                                        }
+                                    }
+                                },
+                                {
+                                    "widgetType" : "Text",
+                                    "sort" : 6,
+                                    "config" : {
+                                        "label" : "City",
+                                        "placeHolder" : "City",
+                                        "fieldName" : "city",
+                                        "id" : "city",
+                                        "validation" : {
+                                            "required" : true
+                                        },
+                                        "eSlipVisibility" : false,
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "3"
+                                        }
+                                    }
+                                },
+                                {
+                                    "widgetType" : "Text",
+                                    "sort" : 7,
+                                    "config" : {
+                                        "label" : "PO Box",
+                                        "placeHolder" : "PO Box",
+                                        "fieldName" : "pin",
+                                        "validation" : {
+                                            "required" : true
+                                        },
+                                        "id" : "pin",
+                                        "eSlipVisibility" : false,
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "3"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "validations" : [
+                        {
+                            "field" : "firstName",
+                            "validation" : {
+                                "required" : true,
+                                "maxlength" : 150
+                            },
+                            "messages" : {
+                                "required" : "Enter first name",
+                                "maxlength" : "Maximum length exceeded"
+                            }
+                        },
+                        {
+                            "field" : "address1",
+                            "validation" : {
+                                "required" : true
+                            },
+                            "messages" : {
+                                "required" : "Enter address 1"
+                            }
+                        },
+                        {
+                            "field" : "noChildren",
+                            "validation" : {
+                                "required" : true
+                            },
+                            "messages" : {
+                                "required" : "Enter no of children"
+                            }
+                        },
+                        {
+                            "field" : "dobDet",
+                            "validation" : {
+                                "required" : true
+                            },
+                            "messages" : {
+                                "required" : "Enter date of birth"
+                            }
+                        },
+                        {
+                            "field" : "nationality",
+                            "validation" : {
+                                "required" : true
+                            },
+                            "messages" : {
+                                "required" : "Enter nationality"
+                            }
+                        },
+                        {
+                            "field" : "maritialStatus",
+                            "validation" : {
+                                "required" : true
+                            },
+                            "messages" : {
+                                "required" : "Enter maritial status"
+                            }
+                        },
+                        {
+                            "field" : "country",
+                            "validation" : {
+                                "required" : true
+                            },
+                            "messages" : {
+                                "required" : "Select country"
+                            }
+                        },
+                        {
+                            "field" : "email",
+                            "validation" : {
+                                "required" : true,
+                                "customemail" : true
+                            },
+                            "messages" : {
+                                "required" : "Enter email",
+                                "customemail" : "Enter valid email "
+                            }
+                        },
+                        {
+                            "field" : "mobile",
+                            "validation" : {
+                                "required" : true,
+                                "digits" : true,
+                                "maxlength" : 12
+                            },
+                            "messages" : {
+                                "required" : "Enter mobile number",
+                                "digits" : "Please enter valid number",
+                                "maxlength" : "Maximum length reached"
+                            }
+                        },
+                        {
+                            "field" : "emirate",
+                            "validation" : {
+                                "required" : true
+                            },
+                            "messages" : {
+                                "required" : "Select emirate"
+                            }
+                        },
+                        {
+                            "field" : "city",
+                            "validation" : {
+                                "required" : true
+                            },
+                            "messages" : {
+                                "required" : "Enter city"
+                            }
+                        },
+                        {
+                            "field" : "pin",
+                            "validation" : {
+                                "required" : true,
+                                "maxlength" : 6,
+                                "digits" : "true"
+                            },
+                            "messages" : {
+                                "required" : "Enter PO Box",
+                                "maxlength" : "maximum length exceeded",
+                                "digits" : "Only numbers are allowed."
+                            }
+                        }
+                    ]
+                },
+                "businessDetails" : {
+                    "name" : "Business Details",
+                    "rows" : [
+                        {
+                            "config" : "",
+                            "fields" : [
+                                {
+                                    "widgetType" : "BusinessInsured",
+                                    "sort" : 1,
+                                    "config" : {
+                                        "label" : "Business Activity ",
+                                        "placeHolder" : "Business Activity",
+                                        "fieldName" : "businessType",
+                                        "id" : "businessType",
+                                        "eSlipVisibility" : false,
+                                        "validation" : {
+                                            "required" : true
+                                        },
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "12"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "config":{
+                                "class":"top_space"
+                            },
+                            "fields":[
+                                            {
+                                                "widgetType" : "Text",
+                                                "sort" : 7,
+                                                "config" : {
+                                                    "label" : "Cover",
+                                                    "placeHolder" : "Enter the Cover",
+                                                    "fieldName" : "Cover",
+                                                    "id" : "Cover",
+                                                    "label_class" : "col-adjust",
+                                                    "field_class" : "col-8",
+                                                    "valueKey" : "Cover",
+                                                    "validation" : {
+                                                        "required" : true
+                                                    },
+                                                    "eQuotationVisibility" : true,
+                                                    "class" : [
+                                                        "required"
+                                                    ],
+                                                    "relation" : {
+                                                        "relatedTo" : false
+                                                    },
+                                                    "style" : {
+                                                        "col_width" : "4"
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "widgetType" : "Text",
+                                                "sort" : 7,
+                                                "config" : {
+                                                    "label" : "Geographical area",
+                                                    "placeHolder" : "Enter the geographical area",
+                                                    "fieldName" : "geographicalArea",
+                                                    "id" : "geographicalArea",
+                                                    "valueKey" : "geographicalArea",
+                                                    "label_class" : "col-adjust",
+                                                    "field_class" : "col-6",
+                                                    "validation" : {
+                                                        "required" : true
+                                                    },
+                                                    "eQuotationVisibility" : true,
+                                                    "class" : [
+                                                        "required"
+                                                    ],
+                                                    "relation" : {
+                                                        "relatedTo" : false
+                                                    },
+                                                    "style" : {
+                                                        "col_width" : "4"
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "widgetType" : "Text",
+                                                "sort" : 7,
+                                                "config" : {
+                                                    "label" : "Sum Insured",
+                                                    "placeHolder" : "Enter the sum insured",
+                                                    "fieldName" : "sumInsured",
+                                                    "id" : "sumInsured",
+                                                    "valueKey" : "sumInsured",
+                                                    "label_class" : "col-adjust",
+                                                    "field_class" : "col-6",
+                                                    "validation" : {
+                                                        "required" : true
+                                                    },
+                                                    "eQuotationVisibility" : true,
+                                                    "class" : [
+                                                        "required"
+                                                    ],
+                                                    "relation" : {
+                                                        "relatedTo" : false
+                                                    },
+                                                    "style" : {
+                                                        "col_width" : "4"
+                                                    }
+                                                }
+                                            }                                 
+                            ]
+                        },                        
+                        {
+                            "config" : {
+                                "class" : "top_space"
+                            },
+                            "fields" : [
+                                {
+                                    "widgetType" : "CustomMultiplier",
+                                    "sort" : 7,
+                                    "config" : {
+                                        "label" : "ELECTRONIC EQUIPMENT",
+                                        "fieldName" : "electronicEquipmentss",
+                                        "id" : "electronicEquipmentssDetails",
+                                        "valueKey" : "electronicEquipmentss",
+                                        "isMultiplier" : true,
+                                        "children" : [
+                                            {
+                                                "widgetType" : "Text",
+                                                "sort" : 7,
+                                                "config" : {
+                                                    "label" : "LOCATION",
+                                                    "placeHolder" : "LOCATION",
+                                                    "fieldName" : "electronicEquipmentss[location][]",
+                                                    "id" : "electronicEquipmentss_location",
+                                                    "valueKey" : "location",
+                                                    "class" : "required",                                                    
+                                                    "eQuotationVisibility" : true,
+                                                    "relation" : {
+                                                        "relatedTo" : false
+                                                    },
+                                                    "style" : {
+                                                        "col_width" : "4"
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "widgetType" : "Text",
+                                                "sort" : 7,
+                                                "config" : {
+                                                    "label" : "DESCRIPTION (Model, Year)",
+                                                    "placeHolder" : "Enter the DESCRIPTION (Model, Year)",
+                                                    "fieldName" : "electronicEquipmentss[description][]",
+                                                    "id" : "electronicEquipmentss_description",
+                                                    "valueKey" : "description",
+                                                    "class" : "required",
+                                                    "eQuotationVisibility" : true,
+                                                    "relation" : {
+                                                        "relatedTo" : false
+                                                    },
+                                                    "style" : {
+                                                        "col_width" : "4"
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "widgetType" : "Text",
+                                                "sort" : 7,
+                                                "config" : {
+                                                    "label" : "QUANTITY",
+                                                    "placeHolder" : "Enter quantity",
+                                                    "fieldName" : "electronicEquipmentss[quantity][]",
+                                                    "id" : "electronicEquipmentss_quantity",
+                                                    "valueKey" : "quantity",
+                                                    "class" : "required",                                                    
+                                                    "eQuotationVisibility" : true,
+                                                    "relation" : {
+                                                        "relatedTo" : false
+                                                    },
+                                                    "style" : {
+                                                        "col_width" : "3"
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "widgetType" : "Text",
+                                                "sort" : 7,
+                                                "config" : {
+                                                    "label" : "NEW REPLACEMENT VALUE",
+                                                    "placeHolder" : "Enter the NEW REPLACEMENT VALUE",
+                                                    "fieldName" : "electronicEquipmentss[replacement][]",
+                                                    "id" : "electronicEquipmentss_replacement",
+                                                    "valueKey" : "replacement",
+                                                    "class" : "required",
+                                                    "eQuotationVisibility" : true,
+                                                    "relation" : {
+                                                        "relatedTo" : false
+                                                    },
+                                                    "style" : {
+                                                        "col_width" : "4"
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "widgetType" : "Text",
+                                                "sort" : 7,
+                                                "config" : {
+                                                    "label" : "USE",
+                                                    "placeHolder" : "Enter USE",
+                                                    "fieldName" : "electronicEquipmentss[use][]",
+                                                    "id" : "electronicEquipmentss_use",
+                                                    "valueKey" : "use",
+                                                    "class" : "required",                                                    
+                                                    "eQuotationVisibility" : true,
+                                                    "relation" : {
+                                                        "relatedTo" : false
+                                                    },
+                                                    "style" : {
+                                                        "col_width" : "3"
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "style" : {
+                                            "col_width" : "12"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "config":{
+                                "class":"top_space"
+                            },
+                            "fields":[
+                                            {
+                                                "widgetType" : "Text",
+                                                "sort" : 7,
+                                                "config" : {
+                                                    "label" : "Value for external data media",
+                                                    "placeHolder" : "Enter the value for external data media",
+                                                    "fieldName" : "externalDataMedia",
+                                                    "id" : "externalDataMedia",
+                                                    "label_class" : "col-5",
+                                                    "field_class" : "col-6",
+                                                    "valueKey" : "externalDataMedia",
+                                                    "aed":true,
+                                                    "validation" : {
+                                                        "required" : true
+                                                    },
+                                                    "eQuotationVisibility" : true,
+                                                    "class" : [
+                                                        "required"
+                                                    ],
+                                                    "relation" : {
+                                                        "relatedTo" : false
+                                                    },
+                                                    "style" : {
+                                                        "col_width" : "6"
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "widgetType" : "Text",
+                                                "sort" : 7,
+                                                "config" : {
+                                                    "label" : "Value for increased cost of working",
+                                                    "placeHolder" : "Enter the value for increased cost of working",
+                                                    "fieldName" : "costOfWorking",
+                                                    "id" : "costOfWorking",
+                                                    "valueKey" : "costOfWorking",
+                                                    "label_class" : "col-6",
+                                                    "field_class" : "col-6",
+                                                    "aed":true,
+                                                    "validation" : {
+                                                        "required" : true
+                                                    },
+                                                    "eQuotationVisibility" : true,
+                                                    "class" : [
+                                                        "required"
+                                                    ],
+                                                    "relation" : {
+                                                        "relatedTo" : false
+                                                    },
+                                                    "style" : {
+                                                        "col_width" : "6"
+                                                    }
+                                                }
+                                            }                                
+                            ]
+                        }                 
+                                               
+                    ],
+                    "validations" : [
+                        {
+                            "field" : "businessType",
+                            "validation" : {
+                                "required" : true
+                            },
+                            "messages" : {
+                                "required" : "Please select a business type"
+                            }
+                        }
+                    ]
+                },                
+                "policyDetails" : {
+                    "name" : "Previous Policy Details",
+                    "rows" : [
+                        {
+                            "config" : "",
+                            "fields" : [
+                                {
+                                    "widgetType" : "PolicyPeriod",
+                                    "sort" : 2,
+                                    "config" : {
+                                        "label" : "Policy Period",
+                                        "placeHolder" : "Select policy period",
+                                        "fieldName" : "policyPeriod",
+                                        "id" : "policyPeriod",
+                                        "eSlipVisibility" : true,
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "12"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "config" : "",
+                            "fields" : [
+                                {
+                                    "widgetType" : "ClaimHistoryWithColumns",
+                                    "sort" : 2,
+                                    "config" : {
+                                        "type" : false,
+                                        "label" : "Claims History",
+                                        "placeHolder" : "Select claims history",
+                                        "fieldName" : "claimsHistory",
+                                        "id" : "claimsHistory",
+                                        "eSlipVisibility" : true,
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "8"
+                                        },
+                                        "field_class" : "col-8",
+                                        "columns" : [
+                                            {
+                                                "label" : "Amount",
+                                                "fieldname" : "amount",
+                                                "columnWidth" : "25%",
+                                                "aed" : true
+                                            },
+                                            {
+                                                "label" : "Cost & Description",
+                                                "fieldname" : "cost_&_Description",
+                                                "columnWidth" : "65%"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "validations" : [
+                        {
+                            "field" : "claimsHistory",
+                            "validation" : {
+                                "required" : true
+                            },
+                            "messages" : {
+                                "required" : "Select claims history"
+                            }
+                        }
+                    ]
+                },
+                "documents" : {
+                    "name" : "Documents",
+                    "rows" : [
+                        {
+                            "config" : "",
+                            "fields" : [
+                                {
+                                    "widgetType" : "multipleUpload",
+                                    "sort" : 5,
+                                    "config" : {
+                                        "label" : "Upload your file",
+                                        "placeHolder" : "Drag your files or click here",
+                                        "fieldName" : "uploadYourFile",
+                                        "id" : "uploadYourFile",
+                                        "eSlipVisibility" : true
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "validations" : []
+                }
+            }
+        },
+        "eSlip" : {
+            "name" : "E Slip",
+            "steps" : {
+                "forms" : {
+                    "name" : "form",
+                    "rows" : [
+                        {
+                            "config" : "",
+                            "fields" : [                                
+                                {
+                                    "widgetType" : "Text",
+                                    "sort" : 1,
+                                    "config" : {
+                                        "label" : "Deductible",
+                                        "placeHolder" : "Deductible",
+                                        "fieldName" : "deductibleField",
+                                        "id" : "deductibleField",
+                                        "eQuotationVisibility" : true,
+                                        "eQuoteTextboxValue" : true,
+                                        "eQuoteTextbox" : true,
+                                        "validation" : {
+                                            "required" : false
+                                        },
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "12"
+                                        }
+                                    }
+                                },
+                                {
+                                    "widgetType" : "Text",
+                                    "sort" : 2,
+                                    "config" : {
+                                        "label" : "Loss history (3 years)",
+                                        "placeHolder" : "Loss history (3 years)",
+                                        "fieldName" : "lossHistory",
+                                        "id" : "lossHistory",
+                                        "eQuotationVisibility" : true,
+                                        "eQuoteTextboxValue" : true,
+                                        "eQuoteTextbox" : true,
+                                        "validation" : {
+                                            "required" : false
+                                        },
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "12"
+                                        }
+                                    }
+                                },                                
+                                {
+                                    "widgetType" : "Text",
+                                    "sort" : 5,
+                                    "config" : {                                       
+                                        "label" : "Premium",
+                                        "preCustomerLabel" : "Target Premium",
+                                        "placeHolder" : "Premium",
+                                        "aed" : true,
+                                        "fieldName" : "premiumRequired",
+                                        "id" : "premiumRequired",
+                                        "eQuotationVisibility" : true,
+                                        "eQuoteTextboxValue" : true,
+                                        "eQuoteTextbox" : true,
+                                        "validation" : {
+                                            "required" : false
+                                        },
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "6"
+                                        }
+                                    }
+                                }                               
+                            ]
+                        },
+                        {
+                            "config" : "",
+                            "fields" : [
+                                {
+                                    "widgetType" : "Text",
+                                    "sort" : 7,
+                                    "config" : {
+                                        "label" : "Brokerage (in %)",
+                                        "placeHolder" : "Enter here",
+                                        "fieldName" : "brokerage",
+                                        "id" : "brokerage",
+                                        "iClass" : "numberOnly rangeValidation",
+                                        "dataAttributes" : "data-min=20 data-max=100",
+                                        "eQuotationVisibility" : true,
+                                        "eQuoteTextboxValue" : true,
+                                        "eQuoteTextbox" : true,
+                                        "validation" : {
+                                            "required" : false
+                                        },
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "12"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "config" : {},
+                            "fields" : [
+                                {
+                                    "widgetType" : "Textarea",
+                                    "sort" : 9,
+                                    "config" : {
+                                        "label" : "Comments (if any)",
+                                        "placeHolder" : "Enter comments",
+                                        "fieldName" : "comments",
+                                        "id" : "comments",
+                                        "eQuotationVisibility" : true,
+                                        "eQuoteTextbox" : false,
+                                        "eQuoteTextArea" : true,
+                                        "isCustomerResponse" : true,
+                                        "validation" : {
+                                            "required" : false
+                                        },
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "12"
+                                        }
+                                    }
+                                }
+                            ]
+                        },                       
+                        {
+                            "config" : "",
+                            "fields" : [
+                                {
+                                    "widgetType" : "Text",
+                                    "sort" : 7,
+                                    "config" : {
+                                        "label" : "Last date for submitting the quotation",
+                                        "placeHolder" : "click to select a date",
+                                        "fieldName" : "lastDate",
+                                        "id" : "lastDate",
+                                        "class" : [
+                                            "add_datepicker"
+                                        ],
+                                        "datepicker" : true,
+                                        "eQuotationVisibility" : false,
+                                        "eQuoteTextbox" : true,
+                                        "eQuoteTextboxValue" : true,
+                                        "eQuoteTextboxHidden" : true,
+                                        "validation" : {
+                                            "required" : true
+                                        },
+                                        "relation" : {
+                                            "relatedTo" : false
+                                        },
+                                        "style" : {
+                                            "col_width" : "12"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "validations" : [
+                        {
+                            "field" : "deductibleField",
+                            "validation" : {
+                                "amount" : true
+                            },
+                            "messages" : {
+                                "amount" : "Please enter a valid number"
+                            }
+                        },
+                        {
+                            "field" : "lastDate",
+                            "validation" : {
+                                "required" : true
+                            },
+                            "messages" : {
+                                "required" : "select a date"
+                            }
+                        },
+                        {
+                            "field" : "comments",
+                            "validation" : {
+                                "maxlength" : "200"
+                            },
+                            "messages" : {
+                                "maxlength" : "Maximum number of characters exceeds."
+                            }
+                        },
+                        {
+                            "field" : "premiumRequired",
+                            "validation" : {                                
+                                "number" : true
+                            },
+                            "messages" : {
+                                "number" : "Please enter a valid number"                                
+                            }
+                        },
+                        {
+                            "field" : "rateRequired",
+                            "validation" : {
+                                "number" : true
+                            },
+                            "messages" : {
+                                "number" : "Please enter a valid number"
+                            }
+                        },
+                        {
+                            "field" : "brokerage",
+                            "validation" : {
+                                "range" : "[20,100]"
+                            },
+                            "messages" : {
+                                "required" : "Enter brokerage.",
+                                "range" : "Please enter value in between 20 and 100."
+                            }
+                        },
+                        {
+                            "field" : "warranty",
+                            "validation" : {
+                                "amount" : true
+                            },
+                            "messages" : {
+                                "amount" : "Please enter a valid number"
+                            }
+                        },
+                        {
+                            "field" : "specialCondition",
+                            "validation" : {
+                                "amount" : true
+                            },
+                            "messages" : {
+                                "amount" : "Please enter a valid number"
+                            }
+                        },
+                        {
+                            "field" : "exclusion",
+                            "validation" : {
+                                "amount" : true
+                            },
+                            "messages" : {
+                                "amount" : "Please enter a valid number"
+                            }
+                        }
+                    ]
+                },
+                "review" : {
+                    "name" : "Review Fields",
+                    "fields" : [
+                        {
+                            "type" : "text",
+                            "fieldName" : "insured",
+                            "label" : "Insured",
+                            "value" : "{$formValues['eQuestionnaire']['basicDetails']['firstName']}",
+                            "eQuotationVisibility" : true,
+                            "pdfView" : true,
+                            "statement" : ""
+                        },
+                        {
+                            "type" : "text",
+                            "fieldName" : "businessActivity",
+                            "label" : "Business Activity",
+                            "value" : "{$formValues['eQuestionnaire']['businessDetails']['businessType']['optionVal']}",
+                            "eQuotationVisibility" : true,
+                            "pdfView" : true,
+                            "statement" : ""
+                        },
+                        {
+                            "type" : "text",
+                            "fieldName" : "eslipCover",
+                            "label" : "Cover",
+                            "value" : "{$formValues['eQuestionnaire']['businessDetails']['Cover']}",
+                            "eQuotationVisibility" : true,
+                            "pdfView" : true,
+                            "statement" : ""
+                        },
+                        {
+                            "type" : "text",
+                            "fieldName" : "eslipGeographicalArea",
+                            "label" : "Geographical area",
+                            "value" : "{$formValues['eQuestionnaire']['businessDetails']['geographicalArea']}",
+                            "eQuotationVisibility" : true,
+                            "pdfView" : true,
+                            "statement" : ""
+                        },
+                        {
+                            "type" : "text",
+                            "fieldName" : "eslipSumInsured",
+                            "label" : "Sum Insured",
+                            "value" : "{$formValues['eQuestionnaire']['businessDetails']['sumInsured']}",
+                            "eQuotationVisibility" : true,
+                            "pdfView" : true,
+                            "statement" : ""
+                        },
+                        {
+                            "type" : "text",
+                            "fieldName" : "eslipExternalDataMedia",
+                            "label" : "Value for external data media",
+                            "value" : "{$formValues['eQuestionnaire']['businessDetails']['externalDataMedia']}",
+                            "eQuotationVisibility" : true,
+                            "pdfView" : true,
+                            "statement" : ""
+                        },
+                        {
+                            "type" : "text",
+                            "fieldName" : "eslipCostOfWorking",
+                            "label" : "Value for increased cost of working",
+                            "value" : "{$formValues['eQuestionnaire']['businessDetails']['costOfWorking']}",
+                            "eQuotationVisibility" : true,
+                            "pdfView" : true,
+                            "statement" : ""
+                        },
+                        {
+                            "type" : "text",
+                            "fieldName" : "policyPeriod",
+                            "label" : "Policy Period",
+                            "value" : "{$formValues['eQuestionnaire']['policyDetails']['policyPeriod']['policyFrom']} -  {$formValues['eQuestionnaire']['policyDetails']['policyPeriod']['policyTo'] }",
+                            "pdfView" : true,
+                            "eQuotationVisibility" : true
+                        },
+                        {
+                            "type" : "EslipArrayView",
+                            "fieldName" : "electronicEquipmentDetails",
+                            "label" : "ELECTRONIC EQUIPMENT",
+                            "isChecked" : true,                           
+                            "value" : [
+                                {
+                                    "columnName" : "Location",
+                                    "columnValue" : "{$formValues['eQuestionnaire']['businessDetails']['electronicEquipmentss']['location']}"
+                                },
+                                {
+                                    "columnName" : "Description(Model, Year)",
+                                    "columnValue" : "{$formValues['eQuestionnaire']['businessDetails']['electronicEquipmentss']['description']}"
+                                },
+                                {
+                                    "columnName" : "Quantity",
+                                    "columnValue" : "{$formValues['eQuestionnaire']['businessDetails']['electronicEquipmentss']['quantity']}"
+                                },
+                                {
+                                    "columnName" : "New Replacement Value",
+                                    "columnValue" : "{$formValues['eQuestionnaire']['businessDetails']['electronicEquipmentss']['replacement']}"
+                                },
+                                {
+                                    "columnName" : "use",
+                                    "columnValue" : "{$formValues['eQuestionnaire']['businessDetails']['electronicEquipmentss']['use']}"
+                                }
+                            ],
+                            "eQuotationVisibility" : true,
+                            "style" : {
+                                "col_width" : "10"
+                            }
+                        },                                                  
+                        {
+                            "type" : "checkbox",
+                            "label" : "Automatic Reinstatement at pro-rata additional premium",
+                            "eQuotationVisibility" : true,
+                            "fieldName" : "NavigationLimitClause"
+                        },
+                        {
+                            "type" : "checkbox",
+                            "label" : "Automatic additions/deletions clause – subject to notification within 30 days",
+                            "eQuotationVisibility" : true,
+                            "fieldName" : "MotherVesselClause"
+                        },
+                        {
+                            "type" : "checkbox",
+                            "label" : "Claim notification – ‘as soon as reasonably practicable’",
+                            "eQuotationVisibility" : true,
+                            "fieldName" : "InstituteYachtClause"
+                        },
+                        {
+                            "type" : "checkbox",
+                            "label" : "Claims preparation Cost",
+                            "eQuotationVisibility" : true,
+                            "fieldName" : "InstituteYachtCLClause"
+                        },
+                        {
+                            "type" : "checkbox",
+                            "label" : "Capital addition clause",
+                            "eQuotationVisibility" : true,
+                            "fieldName" : "AgreedSuchBoatsClause"
+                        },
+                        {
+                            "type" : "checkbox",
+                            "label" : "Debris removal clause",
+                            "eQuotationVisibility" : true,
+                            "fieldName" : "IncludingThirdClause"
+                        },
+                        {
+                            "type" : "checkbox",
+                            "label" : "Cover for transit risks",
+                            "eQuotationVisibility" : true,
+                            "fieldName" : "AgreedhullClause"
+                        },                        
+                        {
+                            "type" : "checkbox",
+                            "label" : "Cover for fixing and dismantling",
+                            "eQuotationVisibility" : true,
+                            "fieldName" : "liabilitiesClause"
+                        },
+                        {
+                            "type" : "checkbox",
+                            "label" : "Cover for Reinstatement of information",
+                            "eQuotationVisibility" : true,
+                            "fieldName" : "reinstatementInformationClause"
+                        },
+                        {
+                            "type" : "checkbox",
+                            "label" : "Errors and omission",
+                            "eQuotationVisibility" : true,
+                            "fieldName" : "errorsClause"
+                        },
+                        {
+                            "type" : "checkbox",
+                            "label" : "Expense to avoid or  reduce loss clause",
+                            "eQuotationVisibility" : true,
+                            "fieldName" : "reduceLossClause"
+                        },
+                        {
+                            "type" : "checkbox",
+                            "label" : "Non-invalidation  clause",
+                            "eQuotationVisibility" : true,
+                            "fieldName" : "nonInvalidationClause"
+                        },
+                        {
+                            "type" : "checkbox",
+                            "label" : "Reinstatement   Value clause",
+                            "eQuotationVisibility" : true,
+                            "fieldName" : "reinstatementClause"
+                        },
+                        {
+                            "type" : "checkbox",
+                            "label" : "Cover for theft",
+                            "eQuotationVisibility" : true,
+                            "fieldName" : "coverClause"
+                        },                        
+                        {
+                            "type" : "checkbox",
+                            "label" : "Primary Insurance Clause",
+                            "eQuotationVisibility" : true,
+                            "fieldName" : "primaryInsuranceClause"
+                        },
+                        {
+                            "type" : "checkbox",
+                            "label" : "Payment on account clause",
+                            "eQuotationVisibility" : true,
+                            "fieldName" : "PaymentAccountClause"
+                        },                                                
+                        {
+                            "type" : "checkbox",
+                            "label" : "Brokers Claim Handling Clause : A loss notification received by the Insurance Broker will be deemed as a loss notification to Insurer. All communications flowing between the Insurer, Insured and the appointed Loss Surveyor should be channelized through the Broker, unless there is any unavoidable reasons compelling direct communications between the parties",
+                            "eQuotationVisibility" : true,
+                            "fieldName" : "BrokersClaimHandlingClause"
+                        },
+                        {
+                            "type" : "claimHistoryView",
+                            "fieldName" : "claimsHistory",
+                            "label" : "Claims History",
+                            "eQuotationVisibility" : true,
+                            "type_col" : false,
+                            "style" : {
+                                "col_width" : "12"
+                            },
+                            "columns" : [
+                                {
+                                    "label" : "Amount",
+                                    "fieldname" : "amount",
+                                    "columnWidth" : "25%",
+                                    "aed" : true
+                                },
+                                {
+                                    "label" : "Cost & Description",
+                                    "fieldname" : "cost_&_Description",
+                                    "columnWidth" : "65%"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "updated_at" : ISODate("2019-11-13T14:05:50.000Z"),
+    "created_at" : ISODate("2019-11-13T03:55:13.000Z")
+}
